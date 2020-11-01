@@ -25,6 +25,13 @@
   "projects": {
     "card": {
       "tags": []
+    },
+    "play-web": {
+      "tags": ["type:app"]
+    },
+    "play-web-e2e": {
+      "tags": [],
+      "implicitDependencies": ["play-web"]
     }
   }
 }
