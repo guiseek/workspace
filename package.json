@@ -2,6 +2,15 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guiseek/workspace.git"
+  },
+  "author": "Guilherme Siquinelli (https://guiseek.dev)",
+  "private": false,
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -24,24 +33,18 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release"
+    "prerelease": "nx affected:build --all",
+    "release": "nx affected --target release --all",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/guiseek/workspace.git"
-  },
-  "author": "Guilherme Siquinelli (https://guiseek.dev)",
-  "private": false,
   "dependencies": {
     "boxen": "^4.2.0",
     "chalk": "^4.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@nrwl/cli": "10.3.1",
     "@nrwl/eslint-plugin-nx": "10.3.1",
@@ -49,7 +52,12 @@
     "@nrwl/node": "^10.3.1",
     "@nrwl/workspace": "10.3.1",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.1.1",
+    "@semantic-release/npm": "^7.0.6",
+    "@semantic-release/release-notes-generator": "^9.0.1",
     "@types/jest": "26.0.8",
     "@types/node": "~8.9.4",
     "@typescript-eslint/eslint-plugin": "4.3.0",
@@ -96,5 +104,4 @@
       "@commitlint/config-conventional"
     ]
   }
-
 }
