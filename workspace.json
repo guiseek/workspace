@@ -10,7 +10,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/card/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/card/**/*.ts"
+            ]
           }
         },
         "build": {
@@ -20,7 +22,17 @@
             "tsConfig": "libs/card/tsconfig.lib.json",
             "packageJson": "libs/card/package.json",
             "main": "libs/card/index.ts",
-            "assets": ["libs/card/*.md"]
+            "assets": [
+              "libs/card/*.md"
+            ]
+          }
+        },
+        "release": {
+          "builder": "@nrwl/workspace:run-commands",
+          "outputs": [],
+          "options": {
+            "command": "npx semantic-release",
+            "cwd": "libs/card"
           }
         }
       }
