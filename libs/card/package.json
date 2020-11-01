@@ -1,14 +1,13 @@
 {
   "name": "@guiseek/card",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "private": false,
   "description": "Cartão de informações sobre Guilherme Siquinelli",
-  "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
   "bin": {
-    "guiseek-card": "./bin/index.js"
+    "guiseek-card": "./bin/card.js"
   },
   "repository": {
     "type": "git",

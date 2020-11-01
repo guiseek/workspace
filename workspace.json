@@ -3,7 +3,7 @@
   "projects": {
     "card": {
       "root": "libs/card",
-      "sourceRoot": "libs/card/src",
+      "sourceRoot": "libs/card",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -13,20 +13,13 @@
             "lintFilePatterns": ["libs/card/**/*.ts"]
           }
         },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/card/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
         "build": {
           "builder": "@nrwl/node:package",
           "options": {
             "outputPath": "dist/libs/card",
             "tsConfig": "libs/card/tsconfig.lib.json",
             "packageJson": "libs/card/package.json",
-            "main": "libs/card/src/index.ts",
+            "main": "libs/card/index.ts",
             "assets": ["libs/card/*.md"]
           }
         }
