@@ -1,6 +1,31 @@
 {
   "version": 1,
-  "projects": {},
+  "projects": {
+    "card": {
+      "root": "libs/card",
+      "sourceRoot": "libs/card",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/card/**/*.ts"]
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/card",
+            "tsConfig": "libs/card/tsconfig.lib.json",
+            "packageJson": "libs/card/package.json",
+            "main": "libs/card/index.ts",
+            "assets": ["libs/card/*.md"]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }

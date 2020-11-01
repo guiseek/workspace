@@ -1,0 +1,22 @@
+{
+  "name": "@guiseek/card",
+  "version": "0.0.6",
+  "private": false,
+  "description": "Cartão de informações sobre Guilherme Siquinelli",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "guiseek-card": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guiseek/workspace.git"
+  },
+  "author": "Guilherme Siquinelli (https://guiseek.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1"
+  }
+}
