@@ -54,7 +54,6 @@ async function insertVersions(packageRoot: string) {
   const versionsJsPath = join(
     resolvedPackageRoot,
     // 'src',
-    'esm2015',
     'utils',
     'versions.js'
   )

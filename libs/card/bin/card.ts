@@ -8,7 +8,7 @@ const captains = console;
 const data = {
   name: chalk.white('  Gui Seek:'),
   handle: chalk.cyan(' Degustador da boa tecnologia'),
-  work: chalk.white('Engenheiro front-end'),
+  work: chalk.green('Engenheiro front-end'),
   github: chalk.cyan('https://github.com/guiseek'),
   twitter: chalk.cyan('https://twitter.com/guiseek'),
   youtube: chalk.cyan('https://youtube.com/c/Guiseek'),
