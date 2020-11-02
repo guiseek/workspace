@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@guiseek/card": ["libs/card/src/index.ts"]
+      "@guiseek/card": ["libs/card/src/index.ts"],
+      "@nx-ux/paper": ["libs/paper/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
