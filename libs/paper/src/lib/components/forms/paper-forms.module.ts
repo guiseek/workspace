@@ -8,11 +8,20 @@ import { InputComponent } from './input/input.component';
 import { FormGroupComponent } from './form-group/form-group.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ReactiveFormsModule
+  imports: [CommonModule, ReactiveFormsModule],
+  declarations: [
+    CheckboxComponent,
+    CheckboxGroupComponent,
+    LegendDirective,
+    InputComponent,
+    FormGroupComponent,
   ],
-  declarations: [CheckboxComponent, CheckboxGroupComponent, LegendDirective, InputComponent, FormGroupComponent],
-  exports: [CheckboxComponent, CheckboxGroupComponent, LegendDirective, InputComponent, FormGroupComponent]
+  exports: [
+    CheckboxComponent,
+    CheckboxGroupComponent,
+    LegendDirective,
+    InputComponent,
+    FormGroupComponent,
+  ],
 })
-export class PaperFormsModule { }
+export class PaperFormsModule {}

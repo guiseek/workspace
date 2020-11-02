@@ -1,6 +1,7 @@
 import {
   ControlContainer,
   ControlValueAccessor,
+  FormControl,
   NgControl,
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
@@ -16,6 +17,8 @@ import {
   Self,
   SkipSelf,
   Injectable,
+  Output,
+  EventEmitter,
 } from '@angular/core';
 
 @Injectable()
@@ -109,25 +112,27 @@ export class CheckboxComponent extends ControlAccessor
 
   @HostBinding('for') labelFor = this.id;
 
+  @Output() valueChange = new EventEmitter();
+  @Output() checkedChange = new EventEmitter();
+
   constructor(
     private renderer: Renderer2,
     private elementRef: ElementRef<HTMLLabelElement>,
     @Optional() @Self() public ngControl: NgControl
   ) {
     super();
-    setTimeout(() => {
-      console.log(this.ngControl);
-    }, 1000);
-    // this.renderer.listen()
+    if (this.ngControl) {
+      this.ngControl.valueAccessor = this;
+    }
   }
 
   ngAfterViewInit(): void {
     const label = this.elementRef.nativeElement;
     const checkbox = label.querySelector('input');
-    console.log(checkbox);
     this.renderer.listen(checkbox, 'change', ({ target }) => {
-      console.log(target);
+      this.ngControl.control.setValue(target.checked);
+      this.valueChange.emit(this.ngControl.value);
+      this.checkedChange.emit(target.checked);
     });
-    setTimeout(() => {});
   }
 }
