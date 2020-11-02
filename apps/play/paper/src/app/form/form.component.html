@@ -1,0 +1,203 @@
+<p>
+  form works!
+</p>
+
+<div ux-form-group>
+  <label for="paperInputs1">Input</label>
+  <input type="text" placeholder="Nice input" id="paperInputs1" />
+</div>
+<div uxRow>
+  <div uxCol="sm-4">
+    <div ux-form-group>
+      <label for="paperInputs2">Block Level</label>
+      <input class="input-block" type="text" id="paperInputs2" />
+    </div>
+  </div>
+  <div uxCol="sm-8">
+    <div ux-form-group>
+      <label for="paperInputs3">Block Level</label>
+      <input class="input-block" type="text" id="paperInputs3" />
+    </div>
+  </div>
+</div>
+<div ux-form-group>
+  <label for="paperInputs4">Disabled</label>
+  <input type="text" placeholder="Disabled" id="paperInputs4" disabled />
+</div>
+<div ux-form-group>
+  <label for="large-input">Large Input</label>
+  <textarea id="large-input" placeholder="Large input"></textarea>
+</div>
+<div ux-form-group>
+  <label for="no-resize">No Resize</label>
+  <textarea class="no-resize" id="no-resize" placeholder="No resize"></textarea>
+</div>
+<div ux-form-group>
+  <label for="paperSelects1">Select</label>
+  <select id="paperSelects1">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</div>
+<fieldset ux-form-group>
+  <legend>Some Radio Buttons</legend>
+  <label for="paperRadios1" class="paper-radio">
+    <input type="radio" name="paperRadios" id="paperRadios1" value="option 1" />
+    <span>This is the first option</span>
+  </label>
+  <label for="paperRadios2" class="paper-radio">
+    <input type="radio" name="paperRadios" id="paperRadios2" value="option 2" />
+    <span>This is the second option</span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <legend>Some Check Boxes</legend>
+  <label for="paperChecks1" class="paper-check">
+    <input
+      type="checkbox"
+      name="paperChecks"
+      id="paperChecks1"
+      value="option 1"
+    />
+    <span>This is the first check</span>
+  </label>
+  <label for="paperChecks2" class="paper-check">
+    <input
+      type="checkbox"
+      name="paperChecks"
+      id="paperChecks2"
+      value="option 2"
+    />
+    <span>This is the second check</span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <legend>Some Switch</legend>
+  <p>Default - standard outline style (square & circle)</p>
+  <label class="paper-switch">
+    <input id="paperSwitch4" name="paperSwitch4" type="checkbox" />
+    <span class="paper-switch-slider"></span>
+  </label>
+  <label for="paperSwitch4" class="paper-switch-label">
+    Square switch
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label for="paperSwitch5" class="paper-switch-label">
+    Square switch
+  </label>
+  <label class="paper-switch">
+    <input id="paperSwitch5" name="paperSwitch5" type="checkbox" checked />
+    <span class="paper-switch-slider"></span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label class="paper-switch">
+    <input id="paperSwitch6" name="paperSwitch6" type="checkbox" checked />
+    <span class="paper-switch-slider round"></span>
+  </label>
+  <label for="paperSwitch6" class="paper-switch-label">
+    Circle switch
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label for="paperSwitch7" class="paper-switch-label">
+    Circle switch
+  </label>
+  <label class="paper-switch">
+    <input id="paperSwitch7" name="paperSwitch7" type="checkbox" />
+    <span class="paper-switch-slider round"></span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <p>Type2 - inline style (square & circle)</p>
+  <label class="paper-switch-2">
+    <input id="paperSwitch8" name="paperSwitch8" type="checkbox" checked />
+    <span class="paper-switch-slider"></span>
+  </label>
+  <label for="paperSwitch8" class="paper-switch-2-label">
+    Square switch
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label for="paperSwitch9" class="paper-switch-2-label">
+    Square switch
+  </label>
+  <label class="paper-switch-2">
+    <input id="paperSwitch9" name="paperSwitch9" type="checkbox" />
+    <span class="paper-switch-slider"></span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label class="paper-switch-2">
+    <input id="paperSwitch10" name="paperSwitch10" type="checkbox" />
+    <span class="paper-switch-slider round"></span>
+  </label>
+  <label for="paperSwitch10" class="paper-switch-2-label">
+    Circle switch
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <label for="paperSwitch11" class="paper-switch-2-label">
+    Circle switch
+  </label>
+  <label class="paper-switch-2">
+    <input id="paperSwitch11" name="paperSwitch11" type="checkbox" checked />
+    <span class="paper-switch-slider round"></span>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <p>Type3 - Tile style</p>
+  <label for="paperSwitch1" class="paper-switch-tile">
+    <input id="paperSwitch1" name="paperSwitch1" type="checkbox" />
+    <div class="paper-switch-tile-card border">
+      <div class="paper-switch-tile-card-front border">Front</div>
+      <div class="paper-switch-tile-card-back border background-primary">
+        Back
+      </div>
+    </div>
+  </label>
+  <label for="paperSwitch2" class="paper-switch-tile">
+    <input id="paperSwitch2" name="paperSwitch2" type="checkbox" />
+    <div class="paper-switch-tile-card border">
+      <div class="paper-switch-tile-card-front border background-warning">
+        Off
+      </div>
+      <div class="paper-switch-tile-card-back border background-secondary">
+        On
+      </div>
+    </div>
+  </label>
+  <label for="paperSwitch3" class="paper-switch-tile">
+    <input id="paperSwitch3" name="paperSwitch3" type="checkbox" />
+    <div class="paper-switch-tile-card border">
+      <div class="paper-switch-tile-card-front border background-danger">
+        Declined
+      </div>
+      <div class="paper-switch-tile-card-back border background-success">
+        Accepted
+      </div>
+    </div>
+  </label>
+</fieldset>
+<fieldset ux-form-group>
+  <legend>Sliders</legend>
+  <div ux-form-group>
+    <label for="input-range">Note /10 :</label>
+    <input type="range" name="note" id="input-range" min="0" max="10" />
+  </div>
+  <div ux-form-group>
+    <label for="percentage">Percentage (<code>.input-block</code>) :</label>
+    <input
+      class="input-block"
+      type="range"
+      name="percentage"
+      id="percentage"
+      min="0"
+      max="100"
+      oninput="output.value = this.value + '%';"
+    />
+    <output id="output" for="percentage">50%</output>
+  </div>
+</fieldset>

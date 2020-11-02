@@ -130,10 +130,191 @@
           }
         }
       }
+    },
+    "paper": {
+      "projectType": "library",
+      "root": "libs/paper",
+      "sourceRoot": "libs/paper/src",
+      "prefix": "ux",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/paper/tsconfig.lib.json",
+            "project": "libs/paper/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/paper/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "release": {
+          "builder": "@nrwl/workspace:run-commands",
+          "outputs": [],
+          "options": {
+            "command": "npx semantic-release",
+            "cwd": "libs/paper"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/paper/tsconfig.lib.json",
+              "libs/paper/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/paper/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/paper/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "play-paper": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/play/paper",
+      "sourceRoot": "apps/play/paper/src",
+      "prefix": "guiseek",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/play/paper",
+            "index": "apps/play/paper/src/index.html",
+            "main": "apps/play/paper/src/main.ts",
+            "polyfills": "apps/play/paper/src/polyfills.ts",
+            "tsConfig": "apps/play/paper/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/play/paper/src/favicon.ico",
+              "apps/play/paper/src/assets"
+            ],
+            "styles": ["apps/play/paper/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/play/paper/src/environments/environment.ts",
+                  "with": "apps/play/paper/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "play-paper:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "play-paper:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "play-paper:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/play/paper/tsconfig.app.json",
+              "apps/play/paper/tsconfig.spec.json",
+              "apps/play/paper/tsconfig.editor.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/play/paper/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/play/paper/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "play-paper-e2e": {
+      "root": "apps/play/paper-e2e",
+      "sourceRoot": "apps/play/paper-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/play/paper-e2e/cypress.json",
+            "tsConfig": "apps/play/paper-e2e/tsconfig.e2e.json",
+            "devServerTarget": "play-paper:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "play-paper:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/play/paper-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/play/paper-e2e/**/*"]
+          }
+        }
+      }
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/web"
+    "defaultCollection": "@nrwl/angular"
   },
-  "defaultProject": "play-web"
+  "defaultProject": "play-paper",
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  }
 }

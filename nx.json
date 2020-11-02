@@ -32,6 +32,16 @@
     "play-web-e2e": {
       "tags": [],
       "implicitDependencies": ["play-web"]
+    },
+    "paper": {
+      "tags": ["type:lib"]
+    },
+    "play-paper": {
+      "tags": ["type:app"]
+    },
+    "play-paper-e2e": {
+      "tags": [],
+      "implicitDependencies": ["play-paper"]
     }
   }
 }
