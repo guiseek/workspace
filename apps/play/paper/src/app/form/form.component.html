@@ -8,6 +8,13 @@
     <label ux-checkbox label="Checkbox 1" [formControl]="form.get('check1')"></label>
     <label ux-checkbox label="Checkbox 2" formControlName="check2"></label>
   </fieldset>
+
+
+  <fieldset ux-checkbox-group uxValueAccessor formControlName="checks">
+    <legend ux-legend>Checkboxes</legend>
+    <label ux-checkbox label="Checkbox 1" value="Checkbox1"></label>
+    <label ux-checkbox label="Checkbox 2" value="Checkbox2"></label>
+  </fieldset>
 </form>
 
 <pre>{{ form.value | json }}</pre>
