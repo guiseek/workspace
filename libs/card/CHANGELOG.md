@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/guiseek/workspace/compare/card/v1.0.0...card/v1.1.0) (2020-11-02)
+
+### Features
+
+- **card:** added extra column ([d82af17](https://github.com/guiseek/workspace/commit/d82af17cef4a515c241312f2a159856f4288caaa))
+
+### Miscellaneous
+
+- Merge pull request #5 from guiseek/seek-name ([a075acc](https://github.com/guiseek/workspace/commit/a075acca67912bbf110eb49d4ce6c673ae94f6f5)), closes [#5](https://github.com/guiseek/workspace/issues/5)
+- Merge pull request #4 from guiseek/paper ([7b020cc](https://github.com/guiseek/workspace/commit/7b020cc1114d6e84008f268b0e0ae9c66a49d3b7)), closes [#4](https://github.com/guiseek/workspace/issues/4)
+- Merge pull request #3 from guiseek/playground ([8ffc1ca](https://github.com/guiseek/workspace/commit/8ffc1ca0147b3b4650b3fc4b696059fb906fd1f2)), closes [#3](https://github.com/guiseek/workspace/issues/3)
+
 # 1.0.0 (2020-11-01)
 
 ### Features
