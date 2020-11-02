@@ -98,6 +98,12 @@ img {
 svg:not(:root) {
   overflow: hidden
 }
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
 button,
 input,
 optgroup,

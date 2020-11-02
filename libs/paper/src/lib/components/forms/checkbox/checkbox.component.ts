@@ -1,7 +1,5 @@
 import {
-  ControlContainer,
   ControlValueAccessor,
-  FormControl,
   NgControl,
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
@@ -15,7 +13,6 @@ import {
   Input,
   Optional,
   Self,
-  SkipSelf,
   Injectable,
   Output,
   EventEmitter,
@@ -28,7 +25,10 @@ export class ControlAccessor implements ControlValueAccessor {
     return this._value;
   }
   @Input()
+  @HostBinding('attr.value')
   public set value(value: any) {
+    console.log('value: ', value);
+
     this._value = value;
   }
 
@@ -38,11 +38,7 @@ export class ControlAccessor implements ControlValueAccessor {
   onTouched = () => {};
 
   writeValue(obj: any): void {
-    console.log('obj: ', obj);
-
-    if (obj !== this.value) {
-      this.value = obj;
-    }
+    this.value = obj;
   }
   registerOnChange(fn: any): void {
     this.onChange = fn;
@@ -51,9 +47,7 @@ export class ControlAccessor implements ControlValueAccessor {
     this.onTouched = fn;
   }
   setDisabledState?(isDisabled: boolean): void {
-    if (isDisabled !== this._disabled) {
-      this._disabled = isDisabled;
-    }
+    this._disabled = isDisabled;
   }
 }
 
@@ -113,7 +107,7 @@ export class CheckboxComponent extends ControlAccessor
   @HostBinding('for') labelFor = this.id;
 
   @Output() valueChange = new EventEmitter();
-  @Output() checkedChange = new EventEmitter();
+  @Output() checkedChange = new EventEmitter<HTMLInputElement>();
 
   constructor(
     private renderer: Renderer2,
@@ -130,9 +124,12 @@ export class CheckboxComponent extends ControlAccessor
     const label = this.elementRef.nativeElement;
     const checkbox = label.querySelector('input');
     this.renderer.listen(checkbox, 'change', ({ target }) => {
-      this.ngControl.control.setValue(target.checked);
-      this.valueChange.emit(this.ngControl.value);
-      this.checkedChange.emit(target.checked);
+      if (this.ngControl) {
+        this.ngControl.control.setValue(target.checked);
+        this.valueChange.emit(this.ngControl.value);
+      }
+      console.log(target.checked, target.value);
+      this.checkedChange.emit(target);
     });
   }
 }

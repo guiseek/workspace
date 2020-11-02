@@ -21,15 +21,13 @@ export class RowDirective {
 
   @Input()
   public set uxRow(value: RowFlex) {
-    console.log('value: ', value);
-
     this._rowFlex = value;
   }
 
   @HostBinding('class')
   get rowClass() {
     const rowSize = this.uxRow
-      ? ` ${this.uxRow}`
+      ? ` flex-${this.uxRow}`
       : '';
     return `row${rowSize}`;
   }

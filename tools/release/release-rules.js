@@ -36,7 +36,7 @@ const releaseByTypeWithScopeFilter = (release, types, projectScope) =>
 const releaseTypes = {
   minor: ['feat'],
   patch: ['build', 'docs', 'fix', 'perf', 'refactor'],
-  none: ['chore', 'ci', 'revert', 'test'],
+  none: ['chore', 'ci', 'revert', 'test', 'wip'],
 }
 
 function createReleaseRulesWithScopeFilter(projectScope) {
