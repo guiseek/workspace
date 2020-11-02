@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/guiseek/workspace/compare/paper/v1.0.0...paper/v1.0.1) (2020-11-02)
+
+### Bug Fixes
+
+- **paper:** checkbox value checked fixed on view init ([#6](https://github.com/guiseek/workspace/issues/6)) ([b6ac255](https://github.com/guiseek/workspace/commit/b6ac255cc13a97a4f1ca589dc54b4d3246fd2525))
+
+### Miscellaneous
+
+- Merge pull request #5 from guiseek/seek-name ([a075acc](https://github.com/guiseek/workspace/commit/a075acca67912bbf110eb49d4ce6c673ae94f6f5)), closes [#5](https://github.com/guiseek/workspace/issues/5)
+
 # 1.0.0 (2020-11-02)
 
 ### Chores
