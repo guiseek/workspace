@@ -6,14 +6,16 @@ import * as chalk from 'chalk';
 const captains = console;
 
 const data = {
-  name: chalk.white('  Gui Seek:'),
-  handle: chalk.cyan(' Degustador da boa tecnologia'),
+  name: chalk.white('Guilherme Siquinelli'),
+  extra: chalk.gray('Degustador de tecnologia'),
   work: chalk.green('Engenheiro front-end'),
   github: chalk.cyan('https://github.com/guiseek'),
   twitter: chalk.cyan('https://twitter.com/guiseek'),
   youtube: chalk.cyan('https://youtube.com/c/Guiseek'),
   page: chalk.cyan('https://guiseek.dev'),
   npx: chalk.white('npx @guiseek/card'),
+  labelName: chalk.white.bold('      Name:'),
+  labelExtra: chalk.white('     Extra:'),
   labelWork: chalk.white.bold('      Work:'),
   labelPage: chalk.white.bold('      Page:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
@@ -23,19 +25,22 @@ const data = {
 };
 
 const newline = '\n';
-const heading = `${data.name} ${data.handle}`;
-const working = `${data.labelWork}  ${data.work} \n`;
-const pageing = `${data.labelPage}  ${data.page}`;
-const githubing = `${data.labelGitHub}  ${data.github}`;
-const twittering = `${data.labelTwitter}  ${data.twitter}`;
-const youtubeing = `${data.labelYoutube}  ${data.youtube}`;
-const carding = `${data.labelCard}  ${data.npx}`;
+const heading = `${data.labelName} ${data.name}`;
+const handling = `${data.labelExtra} ${data.extra}`;
+const working = `${data.labelWork} ${data.work}`;
+const pageing = `${data.labelPage} ${data.page}`;
+const githubing = `${data.labelGitHub} ${data.github}`;
+const twittering = `${data.labelTwitter} ${data.twitter}`;
+const youtubeing = `${data.labelYoutube} ${data.youtube}`;
+const carding = `${data.labelCard} ${data.npx}`;
 
 const output =
   heading +
   newline +
-  newline +
   working +
+  newline +
+  handling +
+  newline +
   newline +
   pageing +
   newline +
