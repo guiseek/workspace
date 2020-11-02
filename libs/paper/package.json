@@ -1,6 +1,17 @@
 {
   "name": "@nx-ux/paper",
   "version": "0.0.1",
+  "private": false,
+  "description": "Componentes Angular para Paper CSS",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guiseek/workspace.git"
+  },
+  "author": "Guilherme Siquinelli (https://guiseek.dev)",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6"
