@@ -67,8 +67,6 @@ async function insertVersions(packageRoot: string) {
     versionsJsPath = ngVersionsJsPath;
   }
 
-  console.info(versionsJsPath);
-
   if (!existsSync(packageJsonPath)) {
     throw new Error(
       `No package.json found in package directory: ${resolvedPackageRoot}`
