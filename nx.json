@@ -32,6 +32,13 @@
     "play-web-e2e": {
       "tags": [],
       "implicitDependencies": ["play-web"]
+    },
+    "eleventy": {
+      "tags": ["type:plugin"]
+    },
+    "eleventy-e2e": {
+      "tags": [],
+      "implicitDependencies": ["eleventy"]
     }
   }
 }

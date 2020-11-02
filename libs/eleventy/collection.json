@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "name": "eleventy",
+  "version": "0.0.1",
+  "schematics": {
+    "eleventy": {
+      "factory": "./src/schematics/eleventy/schematic",
+      "schema": "./src/schematics/eleventy/schema.json",
+      "description": "eleventy schematic"
+    }
+  }
+}

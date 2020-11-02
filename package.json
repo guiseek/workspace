@@ -44,6 +44,7 @@
     "document-register-element": "1.13.1"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -52,6 +53,7 @@
     "@nrwl/eslint-plugin-nx": "10.3.1",
     "@nrwl/jest": "10.3.1",
     "@nrwl/node": "^10.3.1",
+    "@nrwl/nx-plugin": "^10.3.1",
     "@nrwl/web": "10.3.1",
     "@nrwl/workspace": "10.3.1",
     "@semantic-release/changelog": "^5.0.1",
