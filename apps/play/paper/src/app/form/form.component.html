@@ -2,6 +2,9 @@
   form works!
 </p>
 
+<ux-enter-password [length]="6" (valueChange)="onChange($event)" [formControl]="password"></ux-enter-password>
+
+<pre>{{ password.value | json }}</pre>
 <form [formGroup]="form">
   <fieldset ux-checkbox-group>
     <legend ux-legend>Checkboxes</legend>

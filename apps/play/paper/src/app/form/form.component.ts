@@ -7,6 +7,8 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
 
+  password = new FormControl()
+
   form = new FormGroup({
     check1: new FormControl(false),
     check2: new FormControl(true),
@@ -17,6 +19,10 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChange(changes?) {
+    console.log(changes);
   }
 
 }
