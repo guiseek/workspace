@@ -1,3 +1,13 @@
+## [1.0.2](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.0.2) (2020-11-03)
+
+### Bug Fixes
+
+- **paper:** next test ([12e8130](https://github.com/guiseek/workspace/commit/12e81301732b06666cd1bf32104387b386b8742c))
+
+### Miscellaneous
+
+- Forms (#7) ([2caa0ef](https://github.com/guiseek/workspace/commit/2caa0eff1218f975989e72d7c471351ebeb979f0)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
 ## [1.0.1](https://github.com/guiseek/workspace/compare/paper/v1.0.0...paper/v1.0.1) (2020-11-02)
 
 ### Bug Fixes
