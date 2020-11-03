@@ -1,7 +1,7 @@
 import { Action } from '../actions';
 import { Observable, asyncScheduler } from 'rxjs';
 import { observeOn, filter, tap } from 'rxjs/operators';
-import { ActionTypes } from '../../chat-client.types';
+import { ActionTypes } from '@nx-feat/chat-data';
 import { Socket } from 'ngx-socket-io';
 
 export const getPatchValueEffect = (

@@ -4,7 +4,7 @@ import { scan, map } from 'rxjs/operators';
 import { FormBuilder } from '@angular/forms';
 import { Socket } from 'ngx-socket-io';
 
-import { ActionTypes, FormData } from './chat-client.types';
+import { ActionTypes, FormData } from '@nx-feat/chat-data';
 import { State, reducer } from './core/state';
 import {
   ClientConnected,
@@ -26,18 +26,25 @@ import {
 })
 export class ChatClientComponent implements OnInit {
   private dispatcher = new BehaviorSubject<Action>(new Init());
+
   actions$ = this.dispatcher.asObservable();
+
   store$ = this.actions$.pipe(
     scan((state: State, action: Action) => reducer(state, action))
   );
+
   connectedClients$ = this.store$.pipe(
     map((state: State) => state.connectedClients)
   );
+
   data$ = this.store$.pipe(map((state: State) => state.data));
+
   title$ = this.data$.pipe(map((state: Partial<FormData>) => state.title));
+
   description$ = this.data$.pipe(
     map((state: Partial<FormData>) => state.description)
   );
+
   form = this.fb.group({
     title: [''],
     description: [''],

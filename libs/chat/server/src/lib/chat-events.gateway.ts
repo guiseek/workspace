@@ -5,21 +5,7 @@ import {
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 import { Logger } from '@nestjs/common';
-// import { ActionTypes } from './chat-client.types';
-
-export enum ActionTypes {
-  Data = '[Socket] Data',
-  ClientConnected = '[Socket] Client Connected',
-  ValuePatched = '[Socket] Value Patched',
-  PatchValue = '[Form] Patch Value',
-  Init = '[Init] Init',
-}
-
-export interface FormData {
-  title: string;
-  description: string;
-}
-
+import { ActionTypes, FormData } from '@nx-feat/chat-data';
 
 @WebSocketGateway()
 export class ChatEventsGateway {

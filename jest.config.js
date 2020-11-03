@@ -8,5 +8,6 @@ module.exports = {
     '<rootDir>/libs/chat/server',
     '<rootDir>/apps/demo/client',
     '<rootDir>/apps/demo/server',
+    '<rootDir>/libs/chat/data',
   ],
 };

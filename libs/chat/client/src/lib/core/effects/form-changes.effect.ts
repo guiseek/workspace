@@ -2,7 +2,7 @@ import { Action, PatchValue } from '../actions';
 import { merge, BehaviorSubject } from 'rxjs';
 import { debounceTime, map, tap } from 'rxjs/operators';
 import { FormGroup } from '@angular/forms';
-import { FormData } from '../../chat-client.types';
+import { FormData } from '@nx-feat/chat-data';
 
 export const getFormChangesEffect = (
   form: FormGroup,
