@@ -1,6 +1,6 @@
 import { State } from './state.interface';
 import { Action } from '../actions';
-import { ActionTypes } from '../../chat-client.types';
+import { ActionTypes } from '@nx-feat/chat-data';
 import { initialState } from './initial-state.const';
 
 export const reducer = (state: State, action: Action): State => {

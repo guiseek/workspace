@@ -1,4 +1,4 @@
-import { FormData } from '../../chat-client.types';
+import { FormData } from '@nx-feat/chat-data';
 
 export interface State {
   connectedClients: string[];

@@ -1,7 +1,7 @@
 import { Action } from '../actions';
 import { Observable, asyncScheduler } from 'rxjs';
 import { observeOn, filter, tap } from 'rxjs/operators';
-import { ActionTypes } from '../../chat-client.types';
+import { ActionTypes } from '@nx-feat/chat-data';
 import { FormGroup } from '@angular/forms';
 
 export const getValuePatchedEffect = (

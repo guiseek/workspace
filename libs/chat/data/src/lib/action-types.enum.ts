@@ -5,8 +5,3 @@ export enum ActionTypes {
   PatchValue = '[Form] Patch Value',
   Init = '[Init] Init',
 }
-
-export interface FormData {
-  title: string;
-  description: string;
-}

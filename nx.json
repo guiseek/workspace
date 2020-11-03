@@ -58,6 +58,9 @@
     },
     "demo-server": {
       "tags": ["type:app", "side:server"]
+    },
+    "chat-data": {
+      "tags": ["type:data", "side:common"]
     }
   }
 }

@@ -402,9 +402,7 @@
             ],
             "styles": ["apps/demo/client/src/styles.scss"],
             "scripts": [],
-            "allowedCommonJsDependencies": [
-              "socket.io-client"
-            ]
+            "allowedCommonJsDependencies": ["socket.io-client"]
           },
           "configurations": {
             "production": {
@@ -551,6 +549,44 @@
           }
         }
       }
+    },
+    "chat-data": {
+      "projectType": "library",
+      "root": "libs/chat/data",
+      "sourceRoot": "libs/chat/data/src",
+      "prefix": "guiseek",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/chat/data/tsconfig.lib.json",
+            "project": "libs/chat/data/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/chat/data/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/chat/data/tsconfig.lib.json",
+              "libs/chat/data/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/chat/data/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/chat/data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

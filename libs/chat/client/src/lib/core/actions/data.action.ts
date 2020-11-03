@@ -1,4 +1,4 @@
-import { FormData, ActionTypes } from '../../chat-client.types';
+import { ActionTypes, FormData } from '@nx-feat/chat-data';
 
 export class Data {
   type = ActionTypes.Data;
