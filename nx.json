@@ -42,6 +42,22 @@
     "play-paper-e2e": {
       "tags": [],
       "implicitDependencies": ["play-paper"]
+    },
+    "chat-client": {
+      "tags": ["type:feature", "side:client"]
+    },
+    "chat-server": {
+      "tags": ["type:feature", "side:server"]
+    },
+    "demo-client": {
+      "tags": ["type:app", "side:client"]
+    },
+    "demo-client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo-client"]
+    },
+    "demo-server": {
+      "tags": ["type:app", "side:server"]
     }
   }
 }
