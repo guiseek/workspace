@@ -13,13 +13,18 @@ module.exports = {
       name: "chore:    Other changes that don't modify src or test files",
     },
     {
-      value: 'wip', name: "wip:    Work In Progress",
+      value: 'wip',
+      name: 'wip:      Work In Progress',
     },
   ],
 
   scopes: [
     { name: 'card', description: 'anything Card specific' },
     { name: 'paper', description: 'anything Paper specific' },
+    {
+      name: 'hacktoberfest-br',
+      description: 'anything HacktoberfestBr specific',
+    },
     {
       name: 'testing',
       description: 'anything testing specific (e.g., jest or cypress)',

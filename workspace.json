@@ -587,6 +587,48 @@
         }
       },
       "schematics": {}
+    },
+    "hacktoberfest-br": {
+      "root": "libs/hacktoberfest/br",
+      "sourceRoot": "libs/hacktoberfest/br/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/hacktoberfest/br/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/hacktoberfest/br/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/hacktoberfest/br",
+            "tsConfig": "libs/hacktoberfest/br/tsconfig.lib.json",
+            "packageJson": "libs/hacktoberfest/br/package.json",
+            "main": "libs/hacktoberfest/br/src/index.ts",
+            "assets": [
+              "libs/hacktoberfest/br/*.md",
+              "libs/hacktoberfest/br/LICENSE"
+            ]
+          }
+        },
+        "release": {
+          "builder": "@nrwl/workspace:run-commands",
+          "outputs": [],
+          "options": {
+            "command": "npx semantic-release",
+            "cwd": "libs/hacktoberfest/br"
+          }
+        }
+      }
     }
   },
   "cli": {
