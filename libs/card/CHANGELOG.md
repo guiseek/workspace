@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/guiseek/workspace/compare/card/v1.1.0...card/v1.2.0) (2020-11-05)
+
+### Features
+
+- **card:** desafios e comunidades ([3b2d40d](https://github.com/guiseek/workspace/commit/3b2d40dd186c951f538c1d7bbc14e3c712fdcf16))
+
+### Miscellaneous
+
+- Forms (#7) ([2caa0ef](https://github.com/guiseek/workspace/commit/2caa0eff1218f975989e72d7c471351ebeb979f0)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
 # [1.1.0](https://github.com/guiseek/workspace/compare/card/v1.0.0...card/v1.1.0) (2020-11-02)
 
 ### Features
