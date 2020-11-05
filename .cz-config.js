@@ -13,6 +13,10 @@ module.exports = {
       name: "chore:    Other changes that don't modify src or test files",
     },
     {
+      value: 'ci',
+      name: "ci:       Continuous integration",
+    },
+    {
       value: 'wip',
       name: 'wip:      Work In Progress',
     },

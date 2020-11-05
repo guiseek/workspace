@@ -58,23 +58,14 @@ async function insertVersions(packageRoot: string) {
     'utils',
     'versions.js'
   );
-  const versionsPackages = [nodeVersionsJsPath, ngVersionsJsPath];
   let versionsJsPath: string;
 
-  let n = 0;
-  while (!versionsJsPath) {
-    if (existsSync(versionsPackages[n])) {
-      versionsJsPath = versionsPackages[n];
-    }
-    n++;
+  if (existsSync(nodeVersionsJsPath)) {
+    versionsJsPath = nodeVersionsJsPath;
   }
-
-  // if (existsSync(nodeVersionsJsPath)) {
-  //   versionsJsPath = nodeVersionsJsPath;
-  // }
-  // if (existsSync(ngVersionsJsPath)) {
-  //   versionsJsPath = ngVersionsJsPath;
-  // }
+  if (existsSync(ngVersionsJsPath)) {
+    versionsJsPath = ngVersionsJsPath;
+  }
 
   console.info(versionsJsPath);
 
