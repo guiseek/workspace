@@ -24,8 +24,8 @@ const data = {
   page: chalk.blue('https://guiseek.dev'),
   npx: chalk.white('npx @guiseek/card'),
   labelName: chalk.white.bold('      Name:'),
-  labelChallenge: chalk.white('   Desafio:'),
-  labelCommunity: chalk.white('Comunidade:'),
+  labelGoal: chalk.white.bold('      Goal:'),
+  labelCommunity: chalk.white.bold(' Community:'),
   labelWork: chalk.white.bold('      Work:'),
   labelPage: chalk.white.bold('      Page:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
@@ -36,7 +36,7 @@ const data = {
 
 const newline = '\n';
 const heading = `${data.labelName} ${data.name}`;
-const handling = `${data.labelChallenge} ${data.challenge[0]} \n ${data.challenge[1]}`;
+const handling = `${data.labelGoal} ${data.challenge[0]} \n ${data.challenge[1]}`;
 const community = `${data.labelCommunity} ${data.community[0]} \n ${data.community[1]}`;
 const working = `${data.labelWork} ${data.work}`;
 const pageing = `${data.labelPage} ${data.page}`;
