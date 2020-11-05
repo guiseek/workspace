@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/guiseek/workspace/compare/card/v1.2.0...card/v1.2.1) (2020-11-05)
+
+### Bug Fixes
+
+- **card:** labels - pt-br to en-US ([#14](https://github.com/guiseek/workspace/issues/14)) ([e47f443](https://github.com/guiseek/workspace/commit/e47f4437a9421fb7f07fe465b7afa5092caac584))
+
 # [1.2.0](https://github.com/guiseek/workspace/compare/card/v1.1.0...card/v1.2.0) (2020-11-05)
 
 ### Features
