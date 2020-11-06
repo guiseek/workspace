@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ChatClientModule } from '@nx-feat/chat-client';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -9,8 +8,16 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    ChatClientModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(
+      [
+        {
+          path: 'chat',
+          loadChildren: () =>
+            import('./apps/chat/chat.module').then((m) => m.ChatModule),
+        },
+      ],
+      { initialNavigation: 'enabled' }
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent],

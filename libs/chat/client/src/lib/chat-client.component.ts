@@ -8,9 +8,9 @@ import { ActionTypes, FormData } from '@nx-feat/chat-data';
 import { State, reducer } from './core/state';
 import {
   ClientConnected,
-  Data,
   ValuePatched,
   Action,
+  Data,
   Init,
 } from './core/actions';
 import {

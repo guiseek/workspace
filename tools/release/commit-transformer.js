@@ -21,6 +21,7 @@ const mapToTitleGroup = (commit) => {
     ci: 'Continuous Integration',
     chore: 'Chores',
     default: 'Miscellaneous',
+    wip: 'Work In Progress',
   }
   commit.type = commitTypeMapping[commit.type] || commitTypeMapping['default']
 }
