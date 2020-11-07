@@ -13,7 +13,7 @@ import { TabComponent } from './tab.component';
 @Component({
   selector: 'div[ux-tabs]',
   template: `
-    <div uxRow="spaces" class="tabs">
+    <div uxRow="spaces" role="tablist" class="tabs">
       <ng-content select="label[ux-tab]"></ng-content>
       <ng-content select="section[ux-tab-content]"></ng-content>
     </div>
