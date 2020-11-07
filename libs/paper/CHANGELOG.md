@@ -2,6 +2,22 @@
 
 ### Bug Fixes
 
+- **paper:** role in tabs ([#17](https://github.com/guiseek/workspace/issues/17)) ([2971813](https://github.com/guiseek/workspace/commit/2971813cfd80dbf4f3dc669008b6108d63e4df13))
+
+### Features
+
+- **paper:** enter-password component ([fd948c2](https://github.com/guiseek/workspace/commit/fd948c2b05e0655fc77b9035d32dce41e9371592))
+- **paper:** tabs-component ([#16](https://github.com/guiseek/workspace/issues/16)) ([d615b64](https://github.com/guiseek/workspace/commit/d615b64e50222681d47ca518af05e744f77601ea))
+
+### Miscellaneous
+
+- Next (#19) ([3170b7e](https://github.com/guiseek/workspace/commit/3170b7ee60a180837ee39d4dce6e6c471e9e766a)), closes [#19](https://github.com/guiseek/workspace/issues/19)
+- Forms (#7) ([2caa0ef](https://github.com/guiseek/workspace/commit/2caa0eff1218f975989e72d7c471351ebeb979f0)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
+# [1.1.0](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.1.0) (2020-11-07)
+
+### Bug Fixes
+
 - **paper:** label directive with label tag ([8b5317d](https://github.com/guiseek/workspace/commit/8b5317de6780f7b2bbf648d3f0f0a14030cf9405))
 
 ### Features
