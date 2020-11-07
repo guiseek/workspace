@@ -1,18 +1,19 @@
-name: pipeline
+name: prerelease
 
 on:
-  push:
-    branches:
-      - main
-      - next
   pull_request:
     branches:
       - main
       - next
+      - beta
+      - alpha
+
+env:
+  CI: true
 
 jobs:
   build:
-    if: "! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
+    if: "!contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
     runs-on: ubuntu-latest
 
     steps:
@@ -20,10 +21,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - name: Install
+      - name: 🛠 Install
         run: yarn install
-      - name: Release 🚀
+      - name: 📦 Build, Pre release 🎬
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn release
+        run: yarn prerelease
