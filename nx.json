@@ -64,6 +64,9 @@
     },
     "hacktoberfest-br": {
       "tags": []
+    },
+    "store": {
+      "tags": ["type:lib", "side:client"]
     }
   }
 }

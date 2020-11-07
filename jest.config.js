@@ -10,5 +10,6 @@ module.exports = {
     '<rootDir>/apps/demo/server',
     '<rootDir>/libs/chat/data',
     '<rootDir>/libs/hacktoberfest/br',
+    '<rootDir>/libs/store',
   ],
 };

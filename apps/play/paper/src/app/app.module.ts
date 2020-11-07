@@ -31,6 +31,7 @@ import { FormComponent } from './form/form.component';
           loadChildren: () =>
             import('./tabs/tabs.module').then((m) => m.TabsModule),
         },
+      { path: 'store', loadChildren: () => import('./store/store.module').then(m => m.StoreModule) },
       ],
       { initialNavigation: 'enabled' }
     ),
