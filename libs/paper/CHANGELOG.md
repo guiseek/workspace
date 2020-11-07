@@ -1,3 +1,23 @@
+# [1.1.0](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.1.0) (2020-11-07)
+
+### Bug Fixes
+
+- **paper:** label directive with label tag ([35ab016](https://github.com/guiseek/workspace/commit/35ab016c0b0a11bb8f35a246d0b2e2f5668970bc))
+- **paper:** next test ([b4b57f8](https://github.com/guiseek/workspace/commit/b4b57f8a8847ffb41e7735a47d5e45cc97fe5311))
+
+### Chores
+
+- **paper:** release 1.0.2 ([a1714a4](https://github.com/guiseek/workspace/commit/a1714a495b624c8699bfebf7b60e5b9a3875f66e)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
+### Features
+
+- **paper:** enter-password component ([fd948c2](https://github.com/guiseek/workspace/commit/fd948c2b05e0655fc77b9035d32dce41e9371592))
+- **paper:** tabs-component ([#16](https://github.com/guiseek/workspace/issues/16)) ([d615b64](https://github.com/guiseek/workspace/commit/d615b64e50222681d47ca518af05e744f77601ea))
+
+### Miscellaneous
+
+- Forms (#7) ([2caa0ef](https://github.com/guiseek/workspace/commit/2caa0eff1218f975989e72d7c471351ebeb979f0)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
 ## [1.0.2](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.0.2) (2020-11-03)
 
 ### Bug Fixes
