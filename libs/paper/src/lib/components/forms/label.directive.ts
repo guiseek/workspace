@@ -1,6 +1,6 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[uxLabel], [ux-label]'
+  selector: '[uxLabel], label[ux-label]'
 })
 export class LabelDirective { }
