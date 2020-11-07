@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/guiseek/workspace/compare/paper/v1.0.2...paper/v1.0.3) (2020-11-07)
+
+### Bug Fixes
+
+- **paper:** label directive with label tag ([ea78384](https://github.com/guiseek/workspace/commit/ea78384508b048e3cc2e888c040559f241fbd2ee))
+
 ## [1.0.2](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.0.2) (2020-11-03)
 
 ### Bug Fixes
