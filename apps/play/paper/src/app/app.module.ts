@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { PaperFormsModule, PaperLayoutModule } from '@nx-ux/paper';
+import { PaperFormsModule, PaperTabsModule, PaperLayoutModule } from '@nx-ux/paper';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { FormComponent } from './form/form.component';
@@ -12,13 +12,24 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule,
     PaperFormsModule,
+    PaperTabsModule,
     PaperLayoutModule,
     ReactiveFormsModule,
     RouterModule.forRoot(
       [
+        // {
+        //   path: '',
+        //   component: FormComponent,
+        // },
         {
           path: '',
-          component: FormComponent,
+          pathMatch: 'full',
+          redirectTo: 'tabs'
+        },
+        {
+          path: 'tabs',
+          loadChildren: () =>
+            import('./tabs/tabs.module').then((m) => m.TabsModule),
         },
       ],
       { initialNavigation: 'enabled' }
