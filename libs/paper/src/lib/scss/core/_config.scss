@@ -3,7 +3,7 @@
 */
 
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto+Slab&display=swap');
 
 // Set theme colors
 $primary: #41403e !default;
@@ -14,7 +14,7 @@ $warning: #ddcd45 !default;
 $danger: #a7342d !default;
 $muted: #868e96 !default;
 
-$primary-light: lighten($primary, 50%) !default;
+$primary-light: lighten($primary, 20%) !default;
 $secondary-light: lighten($secondary, 50%) !default;
 $success-light: lighten($success, 30%) !default;
 $warning-light: lighten($warning, 30%) !default;
@@ -278,8 +278,8 @@ $colors: (primary, $primary, $primary-light, $primary-text),
 
 // Font settings
 $global-font-size: 20px !default;
-$header-font: 'Patrick Hand SC' !default;
-$body-font: 'Neucha' !default;
+$header-font: 'Roboto Slab', serif !default;
+$body-font: 'Fira Code', monospace !default;
 $font-color: $primary !default;
 
 // Responsive breakpoints

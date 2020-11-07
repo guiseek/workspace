@@ -5,24 +5,10 @@
     padding: 0.75rem 0 0;
   }
 
-  input {
-    display: none;
-
-    &:checked + label {
-      @include color(color, 'primary');
-      @include color('border-bottom-color', 'secondary');
-      border-bottom-style: solid;
-      border-bottom-width: 3px;
-    }
-
-    @for $num from 1 through 5 {
-      &[id$='tab#{$num}']:checked~div[id$='content#{$num}'] {
-        display: block;
-      }
-    }
-  }
-
   label {
+    input[type="radio"] {
+      display: none;
+    }
     @include color('color', primary-light);
     display: inline-block;
     font-weight: 600;
@@ -30,9 +16,22 @@
     padding: 0.75rem;
     text-align: center;
 
+    &.active {
+      @include color(color, 'primary');
+      @include color('border-bottom-color', 'secondary');
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+    }
+
     &:hover {
       @include color('color', muted);
       cursor: pointer;
+    }
+
+    @for $num from 0 through 10 {
+      &[for$='paper-tab#{$num}'].active ~ section[id$='paper-tab-content#{$num}'] {
+        display: block;
+      }
     }
   }
 }
