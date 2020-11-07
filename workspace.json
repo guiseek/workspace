@@ -203,7 +203,12 @@
             "aot": true,
             "assets": [
               "apps/play/paper/src/favicon.ico",
-              "apps/play/paper/src/assets"
+              "apps/play/paper/src/assets",
+              {
+                "glob": "**/*",
+                "input": "libs/assets/src/assets",
+                "output": "./assets"
+              }
             ],
             "styles": ["apps/play/paper/src/styles.scss"],
             "scripts": []
