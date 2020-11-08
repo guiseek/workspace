@@ -1,0 +1,9 @@
+<p>example works!</p>
+
+<ol uxPhotoGallery rowSize="300px" columnSize="320px">
+  <li *ngFor="let image of images$ | async">
+    <figure>
+      <img [src]="image.src" [alt]="image.title">
+    </figure>
+  </li>
+</ol>
