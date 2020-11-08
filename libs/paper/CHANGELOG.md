@@ -1,3 +1,24 @@
+# [1.1.0](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.1.0) (2020-11-08)
+
+### Bug Fixes
+
+- **paper:** role in tabs ([#17](https://github.com/guiseek/workspace/issues/17)) ([2971813](https://github.com/guiseek/workspace/commit/2971813cfd80dbf4f3dc669008b6108d63e4df13))
+
+### Chores
+
+- **paper:** release 1.1.0 ([0ebdb35](https://github.com/guiseek/workspace/commit/0ebdb355fbd13d785890f6b193746153e6ef1355)), closes [#17](https://github.com/guiseek/workspace/issues/17) [#16](https://github.com/guiseek/workspace/issues/16) [#19](https://github.com/guiseek/workspace/issues/19) [#7](https://github.com/guiseek/workspace/issues/7)
+
+### Features
+
+- **paper:** directive to handle css grid ([#20](https://github.com/guiseek/workspace/issues/20)) ([376f354](https://github.com/guiseek/workspace/commit/376f3548dda1be7d3925881dd22946c890e4378a))
+- **paper:** enter-password component ([fd948c2](https://github.com/guiseek/workspace/commit/fd948c2b05e0655fc77b9035d32dce41e9371592))
+- **paper:** tabs-component ([#16](https://github.com/guiseek/workspace/issues/16)) ([d615b64](https://github.com/guiseek/workspace/commit/d615b64e50222681d47ca518af05e744f77601ea))
+
+### Miscellaneous
+
+- Next (#19) ([3170b7e](https://github.com/guiseek/workspace/commit/3170b7ee60a180837ee39d4dce6e6c471e9e766a)), closes [#19](https://github.com/guiseek/workspace/issues/19)
+- Forms (#7) ([2caa0ef](https://github.com/guiseek/workspace/commit/2caa0eff1218f975989e72d7c471351ebeb979f0)), closes [#7](https://github.com/guiseek/workspace/issues/7)
+
 # [1.1.0](https://github.com/guiseek/workspace/compare/paper/v1.0.1...paper/v1.1.0) (2020-11-07)
 
 ### Bug Fixes
