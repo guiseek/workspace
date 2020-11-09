@@ -1,0 +1,18 @@
+<nav class="border fixed split-nav">
+  <div class="nav-brand">
+    <h3>
+      <ng-content select="a"></ng-content>
+    </h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <label for="collapsible1">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </label>
+    <div class="collapsible-body">
+      <ng-content select="ul"></ng-content>
+    </div>
+  </div>
+</nav>

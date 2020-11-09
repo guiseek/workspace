@@ -1,0 +1,11 @@
+<section uxContainer="lg">
+  <p>home works!</p>
+
+  <ol uxPhotoGallery rowSize="300px" columnSize="320px" gapSize="4rem 2rem">
+    <li *ngFor="let image of images$ | async">
+      <figure>
+        <img [src]="image.src" [alt]="image.title" />
+      </figure>
+    </li>
+  </ol>
+</section>

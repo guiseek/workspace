@@ -64,6 +64,9 @@
     },
     "hacktoberfest-br": {
       "tags": []
+    },
+    "web-dev": {
+      "tags": ["type:app", "side:client"]
     }
   }
 }
