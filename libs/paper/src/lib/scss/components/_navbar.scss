@@ -70,20 +70,19 @@ nav {
   }
 
   a {
-    @include color('color', 'primary');
-    @include color('border-bottom-color', 'primary');
+    @include color('color', 'secondary');
+    // @include color('border-bottom-color', 'primary');
     background-image: none;
-    border-bottom-left-radius: 15px 3px;
-    border-bottom-right-radius: 15px 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.08rem;
   }
 
   a:hover {
     @include color('border-color', 'primary-light');
+    // @include color('border-bottom-color', 'secondary');
+    border-bottom-left-radius: 15px 3px;
+    border-bottom-right-radius: 15px 5px;
     border-bottom-style: solid;
-    border-bottom-width: 5px;
+    border-bottom-width: 4px;
   }
 
   ul.inline li a {
