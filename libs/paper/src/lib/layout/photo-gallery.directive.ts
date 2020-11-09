@@ -7,11 +7,31 @@ export class PhotoGalleryDirective {
   @HostBinding('class.ux-photo-gallery')
   uxPhotoGallery = true;
 
+  @HostBinding('style')
+  get properties(): string {
+    return `
+      ${this.varRowSize};
+      ${this.varGapSize};
+      ${this.varColumnSize};
+    `
+  }
+
+  private _gapSize = '300px';
+  @Input() set gapSize(gapSize: string) {
+    this._gapSize = gapSize;
+  }
+  get varGapSize() {
+    return `--ux-grid-gap: ${this.gapSize}`;
+  }
+  get gapSize() {
+    return this._gapSize;
+  }
+
   private _rowSize = '300px';
   @Input() set rowSize(rowSize: string) {
     this._rowSize = rowSize;
   }
-  @HostBinding('style') get varRowSize() {
+  get varRowSize() {
     return `--ux-grid-template-rows: ${this.rowSize}`;
   }
   get rowSize() {
@@ -22,7 +42,7 @@ export class PhotoGalleryDirective {
   @Input() set columnSize(columnSize: string) {
     this._columnSize = columnSize;
   }
-  @HostBinding('style') get varColumnSize() {
+  get varColumnSize() {
     return `--ux-grid-template-columns: ${this.columnSize}`;
   }
   get columnSize() {

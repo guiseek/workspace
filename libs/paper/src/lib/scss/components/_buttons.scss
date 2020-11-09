@@ -72,10 +72,10 @@ a {
   background-size: 4px 3px;
   text-decoration: none;
 
-  &:visited {
-    @include color('color', 'primary');
-    text-decoration: none;
-  }
+  // &:visited {
+  //   @include color('color', 'primary');
+  //   text-decoration: none;
+  // }
 }
 
 @each $colorName, $color, $color-light, $color-text in $colors {

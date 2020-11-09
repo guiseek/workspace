@@ -31,6 +31,7 @@ module.exports = {
   scopes: [
     { name: 'card', description: 'anything Card specific' },
     { name: 'paper', description: 'anything Paper specific' },
+    { name: 'web-dev', description: 'anything Web Dev specific' },
     {
       name: 'hacktoberfest-br',
       description: 'anything HacktoberfestBr specific',
