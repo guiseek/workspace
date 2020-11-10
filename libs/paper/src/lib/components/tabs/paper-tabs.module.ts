@@ -5,14 +5,9 @@ import { TabComponent } from './tab.component';
 import { TabContentComponent } from './tab-content.component';
 import { PaperLayoutModule } from '../../layout';
 
-
-
 @NgModule({
   declarations: [TabsComponent, TabComponent, TabContentComponent],
-  imports: [
-    CommonModule,
-    PaperLayoutModule
-  ],
-  exports: [TabsComponent, TabComponent, TabContentComponent]
+  imports: [CommonModule, PaperLayoutModule],
+  exports: [TabsComponent, TabComponent, TabContentComponent],
 })
-export class PaperTabsModule { }
+export class PaperTabsModule {}

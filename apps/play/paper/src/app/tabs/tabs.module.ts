@@ -10,18 +10,21 @@ import { OverviewComponent } from './overview/overview.component';
 import { ApiComponent } from './api/api.component';
 import { ExampleComponent } from './example/example.component';
 
-const routes: Routes = [
-  { path: '', component: TabsComponent }
-];
+const routes: Routes = [{ path: '', component: TabsComponent }];
 
 @NgModule({
-  declarations: [TabsComponent, OverviewComponent, ApiComponent, ExampleComponent],
+  declarations: [
+    TabsComponent,
+    OverviewComponent,
+    ApiComponent,
+    ExampleComponent,
+  ],
   imports: [
     CommonModule,
     PaperTabsModule,
     PaperLayoutModule,
     TabsRoutingModule,
-    RouterModule.forChild(routes)
-  ]
+    RouterModule.forChild(routes),
+  ],
 })
-export class TabsModule { }
+export class TabsModule {}

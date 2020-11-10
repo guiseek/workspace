@@ -8,5 +8,3 @@ describe('Directive: Container', () => {
     expect(directive).toBeTruthy();
   });
 });
-
-

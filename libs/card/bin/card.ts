@@ -16,7 +16,7 @@ const data = {
   work: chalk.green('Engenheiro front-end'),
   community: [
     chalk.green('DevParaná'),
-    chalk.magenta(`${spc(11)}Hacktoberfest Brasil`)
+    chalk.magenta(`${spc(11)}Hacktoberfest Brasil`),
   ],
   github: chalk.blue('https://github.com/guiseek'),
   twitter: chalk.blue('https://twitter.com/guiseek'),

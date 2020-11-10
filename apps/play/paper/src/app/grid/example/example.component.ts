@@ -18,16 +18,14 @@ export class ExampleComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.images$ = this.http
-      .get<AssetImage[]>('assets/data/images.json')
-      .pipe(
-        map((images) =>
-          images.map(({ src, title }) => ({
-            src: `assets/images/${src}`,
-            title,
-          }))
-        )
-      );
+    this.images$ = this.http.get<AssetImage[]>('assets/data/images.json').pipe(
+      map((images) =>
+        images.map(({ src, title }) => ({
+          src: `assets/images/${src}`,
+          title,
+        }))
+      )
+    );
 
     this.images$.subscribe((data) => console.log(data));
   }

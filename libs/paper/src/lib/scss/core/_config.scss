@@ -65,7 +65,6 @@ $shadow-color-hover: hsla(0, 0, 0%, 0.3) !default;
 
 $primary-inverse: #fff !default;
 
-
 // Set dark theme colors
 
 $dark-primary: #fff !default;
@@ -127,8 +126,6 @@ $dark-shadow-color-hover: hsla(0, 0, 0%, 0.3) !default;
 
 $dark-primary-inverse: $primary !default;
 
-
-
 $theme-map: (
   light: (
     primary: $primary,
@@ -138,44 +135,44 @@ $theme-map: (
     danger: $danger,
     muted: $muted,
     primary-light: $primary-light,
-    secondary-light:$secondary-light,
-    success-light:$success-light,
-    warning-light:$warning-light,
-    danger-light:$danger-light,
-    muted-light:$muted-light,
+    secondary-light: $secondary-light,
+    success-light: $success-light,
+    warning-light: $warning-light,
+    danger-light: $danger-light,
+    muted-light: $muted-light,
     primary-dark: $primary-dark,
-    secondary-dark:$secondary-dark,
-    success-dark:$success-dark,
-    warning-dark:$warning-dark,
-    danger-dark:$danger-dark,
-    muted-dark:$muted-dark,
-    primary-light-10:$primary-light-10,
-    secondary-light-10:$secondary-light-10,
-    success-light-10:$success-light-10,
-    warning-light-10:$warning-light-10,
-    danger-light-10:$danger-light-10,
-    muted-light-10:$muted-light-10,
-    primary-dark-10:$primary-dark-10,
-    secondary-dark-10:$secondary-dark-10,
-    success-dark-10:$success-dark-10,
-    warning-dark-10:$warning-dark-10,
-    danger-dark-10:$danger-dark-10,
-    muted-dark-10:$muted-dark-10,
+    secondary-dark: $secondary-dark,
+    success-dark: $success-dark,
+    warning-dark: $warning-dark,
+    danger-dark: $danger-dark,
+    muted-dark: $muted-dark,
+    primary-light-10: $primary-light-10,
+    secondary-light-10: $secondary-light-10,
+    success-light-10: $success-light-10,
+    warning-light-10: $warning-light-10,
+    danger-light-10: $danger-light-10,
+    muted-light-10: $muted-light-10,
+    primary-dark-10: $primary-dark-10,
+    secondary-dark-10: $secondary-dark-10,
+    success-dark-10: $success-dark-10,
+    warning-dark-10: $warning-dark-10,
+    danger-dark-10: $danger-dark-10,
+    muted-dark-10: $muted-dark-10,
     primary-shaded-50: $primary-shaded-50,
     primary-shaded-70: $primary-shaded-70,
-    white-dark:$white-dark,
-    white-dark-light-80:$white-dark-light-80,
-    light-dark:$light-dark,
-    'white':$white,
+    white-dark: $white-dark,
+    white-dark-light-80: $white-dark-light-80,
+    light-dark: $light-dark,
+    'white': $white,
     main-background: $main-background,
     main-background-light: $main-background-light,
     'black': $black,
-    primary-text:$primary-text,
-    secondary-text:$secondary-text,
-    success-text:$success-text,
-    warning-text:$warning-text,
-    danger-text:$danger-text,
-    muted-text:$muted-text,
+    primary-text: $primary-text,
+    secondary-text: $secondary-text,
+    success-text: $success-text,
+    warning-text: $warning-text,
+    danger-text: $danger-text,
+    muted-text: $muted-text,
     shadow-color-regular: $shadow-color-regular,
     shadow-color-hover: $shadow-color-hover,
     primary-inverse: $primary-inverse,
@@ -188,50 +185,49 @@ $theme-map: (
     danger: $dark-danger,
     muted: $dark-muted,
     primary-light: $dark-primary-light,
-    secondary-light:$dark-secondary-light,
-    success-light:$dark-success-light,
-    warning-light:$dark-warning-light,
-    danger-light:$dark-danger-light,
-    muted-light:$dark-muted-light,
+    secondary-light: $dark-secondary-light,
+    success-light: $dark-success-light,
+    warning-light: $dark-warning-light,
+    danger-light: $dark-danger-light,
+    muted-light: $dark-muted-light,
     primary-dark: $dark-primary-dark,
-    secondary-dark:$dark-secondary-dark,
-    success-dark:$dark-success-dark,
-    warning-dark:$dark-warning-dark,
-    danger-dark:$dark-danger-dark,
-    muted-dark:$dark-muted-dark,
-    primary-light-10:$dark-primary-light-10,
-    secondary-light-10:$dark-secondary-light-10,
-    success-light-10:$dark-success-light-10,
-    warning-light-10:$dark-warning-light-10,
-    danger-light-10:$dark-danger-light-10,
-    muted-light-10:$dark-muted-light-10,
-    primary-dark-10:$dark-primary-dark-10,
-    secondary-dark-10:$dark-secondary-dark-10,
-    success-dark-10:$dark-success-dark-10,
-    warning-dark-10:$dark-warning-dark-10,
-    danger-dark-10:$dark-danger-dark-10,
-    muted-dark-10:$dark-muted-dark-10,
+    secondary-dark: $dark-secondary-dark,
+    success-dark: $dark-success-dark,
+    warning-dark: $dark-warning-dark,
+    danger-dark: $dark-danger-dark,
+    muted-dark: $dark-muted-dark,
+    primary-light-10: $dark-primary-light-10,
+    secondary-light-10: $dark-secondary-light-10,
+    success-light-10: $dark-success-light-10,
+    warning-light-10: $dark-warning-light-10,
+    danger-light-10: $dark-danger-light-10,
+    muted-light-10: $dark-muted-light-10,
+    primary-dark-10: $dark-primary-dark-10,
+    secondary-dark-10: $dark-secondary-dark-10,
+    success-dark-10: $dark-success-dark-10,
+    warning-dark-10: $dark-warning-dark-10,
+    danger-dark-10: $dark-danger-dark-10,
+    muted-dark-10: $dark-muted-dark-10,
     primary-shaded-50: $dark-primary-shaded-50,
     primary-shaded-70: $dark-primary-shaded-70,
-    white-dark:$dark-white-dark,
-    white-dark-light-80:$dark-white-dark-light-80,
-    light-dark:$dark-light-dark,
-    'white':$dark-white,
+    white-dark: $dark-white-dark,
+    white-dark-light-80: $dark-white-dark-light-80,
+    light-dark: $dark-light-dark,
+    'white': $dark-white,
     main-background: $dark-main-background,
     main-background-light: $dark-main-background-light,
     'black': $dark-black,
-    primary-text:$dark-primary-text,
-    secondary-text:$dark-secondary-text,
-    success-text:$dark-success-text,
-    warning-text:$dark-warning-text,
-    danger-text:$dark-danger-text,
-    muted-text:$dark-muted-text,
+    primary-text: $dark-primary-text,
+    secondary-text: $dark-secondary-text,
+    success-text: $dark-success-text,
+    warning-text: $dark-warning-text,
+    danger-text: $dark-danger-text,
+    muted-text: $dark-muted-text,
     shadow-color-regular: $dark-shadow-color-regular,
     shadow-color-hover: $dark-shadow-color-hover,
     primary-inverse: $dark-primary-inverse,
-  )
+  ),
 );
-
 
 html {
   @each $var in map-keys(map-get($theme-map, 'light')) {
@@ -245,7 +241,6 @@ html.dark {
   }
 }
 
-
 @mixin color($property, $varName) {
   // IE falls back to light theme always
   #{$property}: #{map-get(map-get($theme-map, 'light'), 'primary')};
@@ -255,11 +250,11 @@ html.dark {
 // Map to set your color names
 /* stylelint-disable */
 $colors: (primary, $primary, $primary-light, $primary-text),
-         (secondary, $secondary, $secondary-light, $secondary-text),
-         (success, $success, $success-light, $success-text),
-         (warning, $warning, $warning-light, $warning-text),
-         (danger, $danger, $danger-light, $danger-text),
-         (muted, $muted, $muted-light, $muted-text);
+  (secondary, $secondary, $secondary-light, $secondary-text),
+  (success, $success, $success-light, $success-text),
+  (warning, $warning, $warning-light, $warning-text),
+  (danger, $danger, $danger-light, $danger-text),
+  (muted, $muted, $muted-light, $muted-text);
 /* stylelint-enable */
 
 /**
@@ -268,11 +263,11 @@ $colors: (primary, $primary, $primary-light, $primary-text),
 */
 @each $colorName, $color, $color-light in $colors {
   .text-#{$colorName} {
-    @include color('color',#{$colorName});
+    @include color('color', #{$colorName});
   }
 
   .background-#{$colorName} {
-    @include color('background-color',#{$colorName}-light);
+    @include color('background-color', #{$colorName}-light);
   }
 }
 

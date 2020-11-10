@@ -51,16 +51,35 @@
   @param string | integer
   @default null
 */
-@mixin resp($max:null, $min:null) {
-  @if $max == large or $max == lg { $max: $large-screen; }
-  @if $max == medium or $max == md { $max: $medium-screen; }
-  @if $max == small or $max == sm { $max: $small-screen; }
-  @if $max == xsmall or $max == xs { $max: $xsmall-screen; }
+@mixin resp($max: null, $min: null) {
+  @if $max == large or $max == lg {
+    $max: $large-screen;
+  }
+  @if $max == medium or $max == md {
+    $max: $medium-screen;
+  }
+  @if $max == small or $max == sm {
+    $max: $small-screen;
+  }
+  @if $max == xsmall or $max == xs {
+    $max: $xsmall-screen;
+  }
 
-  @if ($min != null and $max != null) { @media only screen and (max-width: $max) and (min-width: $min) { @content; } }
-  @else if($max != null and $min == null) { @media only screen and (max-width: $max) { @content; } }
-  @else if($min != null and $max == null) { @media only screen and (min-width: $min) { @content; } }
-  @else { @error 'no matching size found';}
+  @if ($min != null and $max != null) {
+    @media only screen and (max-width: $max) and (min-width: $min) {
+      @content;
+    }
+  } @else if($max != null and $min == null) {
+    @media only screen and (max-width: $max) {
+      @content;
+    }
+  } @else if($min != null and $max == null) {
+    @media only screen and (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @error 'no matching size found';
+  }
 }
 
 /**
@@ -111,7 +130,12 @@
   @param string
   @default all | 235ms | ease-in-out | 0
 */
-@mixin transition($name:all, $duration:235ms, $animation:ease-in-out, $delay: 0s) {
+@mixin transition(
+  $name: all,
+  $duration: 235ms,
+  $animation: ease-in-out,
+  $delay: 0s
+) {
   transition: $name $duration $animation $delay;
 }
 
@@ -143,7 +167,12 @@
   $index: str-index($string, $search);
 
   @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
   }
 
   @return $string;
@@ -155,5 +184,11 @@
 */
 @mixin striped-background($base-color) {
   $color-dark: darken($base-color, 10%);
-  background: repeating-linear-gradient(45deg, $base-color, $base-color 0.25rem, $color-dark 0.25rem, $color-dark 0.5rem);
+  background: repeating-linear-gradient(
+    45deg,
+    $base-color,
+    $base-color 0.25rem,
+    $color-dark 0.25rem,
+    $color-dark 0.5rem
+  );
 }

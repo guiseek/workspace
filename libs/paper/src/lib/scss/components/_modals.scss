@@ -81,8 +81,8 @@
     margin-top: 0;
   }
 
-  .modal-link+.modal-link,
-  a+a {
+  .modal-link + .modal-link,
+  a + a {
     margin-left: 1.25rem;
   }
 
@@ -94,7 +94,15 @@
 
   .modal-link,
   a {
-    background-image: linear-gradient(5deg, transparent 65%, $secondary 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $secondary 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $secondary 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $secondary 35%, transparent 50%);
+    background-image: linear-gradient(
+        5deg,
+        transparent 65%,
+        $secondary 80%,
+        transparent 90%
+      ),
+      linear-gradient(165deg, transparent 5%, $secondary 15%, transparent 25%),
+      linear-gradient(165deg, transparent 45%, $secondary 55%, transparent 65%),
+      linear-gradient(15deg, transparent 25%, $secondary 35%, transparent 50%);
     background-position: 0 90%;
     background-repeat: repeat-x;
     background-size: 4px 3px;
@@ -113,7 +121,7 @@
 .modal-state {
   display: none;
 
-  &:checked+.modal {
+  &:checked + .modal {
     opacity: 1;
     visibility: visible;
 

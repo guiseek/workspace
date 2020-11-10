@@ -19,7 +19,7 @@ module.exports = {
         'ci',
         'revert',
         'test',
-        'wip'
+        'wip',
       ],
     ],
     'scope-empty': [0],
@@ -32,5 +32,5 @@ module.exports = {
       ],
     ],
   },
-  ignores: [message => message.toLowerCase().startsWith('wip')],
+  ignores: [(message) => message.toLowerCase().startsWith('wip')],
 };

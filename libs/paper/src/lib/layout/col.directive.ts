@@ -1,13 +1,6 @@
 import { Directive, HostBinding, Input } from '@angular/core';
 
-type ColFlex =
-  | 'xs'
-  | 'sm'
-  | 'md'
-  | 'lg'
-  | 'top'
-  | 'fill'
-  | number;
+type ColFlex = 'xs' | 'sm' | 'md' | 'lg' | 'top' | 'fill' | number;
 
 @Directive({
   selector: '[uxCol]',
@@ -28,9 +21,7 @@ export class ColDirective {
 
   @HostBinding('class')
   get colClass() {
-    const colSize = this.uxCol
-      ? ` ${this.uxCol}`
-      : '';
+    const colSize = this.uxCol ? ` ${this.uxCol}` : '';
     return `col${colSize}`;
   }
 }
