@@ -3,7 +3,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2015",
-    "lib": ["ES2018","DOM"],
+    "lib": ["ES2018", "DOM"],
     "outDir": "../../../dist/out-tsc",
     "types": []
   },

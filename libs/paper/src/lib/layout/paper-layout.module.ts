@@ -8,8 +8,20 @@ import { GridDirective } from './grid.directive';
 import { PhotoGalleryDirective } from './photo-gallery.directive';
 
 @NgModule({
-  declarations: [ContainerDirective, RowDirective, ColDirective, GridDirective, PhotoGalleryDirective],
+  declarations: [
+    ContainerDirective,
+    RowDirective,
+    ColDirective,
+    GridDirective,
+    PhotoGalleryDirective,
+  ],
   imports: [CommonModule, LayoutModule],
-  exports: [ContainerDirective, RowDirective, ColDirective, GridDirective, PhotoGalleryDirective],
+  exports: [
+    ContainerDirective,
+    RowDirective,
+    ColDirective,
+    GridDirective,
+    PhotoGalleryDirective,
+  ],
 })
 export class PaperLayoutModule {}

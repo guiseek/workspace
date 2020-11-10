@@ -1,89 +1,524 @@
 [
-  { "title": "galera da facool", "src": "assets/photos/photo-1.jpg" },
-  { "title": "majô :)", "src": "assets/photos/photo-2.jpg" },
-  { "title": "minetto uns 10 anos atrás", "src": "assets/photos/photo-3.jpg" },
-  { "title": "amigos do barulho", "src": "assets/photos/photo-4.jpg" },
-  { "title": "skateboard pra sempre", "src": "assets/photos/photo-5.jpg" },
-  { "title": "aula com flávio gomes", "src": "assets/photos/photo-6.jpg" },
-  { "title": "formamo jão", "src": "assets/photos/photo-7.jpg" },
-  { "title": "obrigado os ensinamentos Luiz e Arthur", "src": "assets/photos/photo-8.jpg" },
-  { "title": "turma da gumga", "src": "assets/photos/photo-9.jpg" },
-  { "title": "gumga io", "src": "assets/photos/photo-10.jpg" },
-  { "title": "acho que 2º meetup (DevParaná)", "src": "assets/photos/photo-11.jpg" },
-  { "title": "Brendan Eich sobre WebAssembly", "src": "assets/photos/photo-12.jpg" },
-  { "title": "Laurie Voss, co-founder do npm", "src": "assets/photos/photo-13.jpg" },
-  { "title": "última apresentação da facool", "src": "assets/photos/photo-14.jpg" },
-  { "title": "partiu BrazilJS samuca", "src": "assets/photos/photo-15.jpg" },
-  { "title": "Brendan² sobre a legada generator function", "src": "assets/photos/photo-16.jpg" },
-  { "title": "nosso 1º meetup DevParaná, falei sobre AngularJS", "src": "assets/photos/photo-17.jpg" },
-  { "title": "Jaydson, fim de BrazilJS (com 840L de choop)", "src": "assets/photos/photo-18.jpg" },
-  { "title": "Criador do meu ganha pão", "src": "assets/photos/photo-19.jpg" },
-  { "title": "respeitadíssimo Douglas Crockford", "src": "assets/photos/photo-20.jpg" },
-  { "title": "Fer, Rafa, Chris Lilley (SVG creator / tech director w3c)", "src": "assets/photos/photo-21.jpg" },
-  { "title": "falei sobre Web Components com AngularJS - UFPR", "src": "assets/photos/photo-22.jpg" },
-  { "title": "", "src": "assets/photos/photo-23.jpg" },
-  { "title": "", "src": "assets/photos/photo-24.jpg" },
-  { "title": "", "src": "assets/photos/photo-25.jpg" },
-  { "title": "", "src": "assets/photos/photo-26.jpg" },
-  { "title": "", "src": "assets/photos/photo-27.jpg" },
-  { "title": "", "src": "assets/photos/photo-28.jpg" },
-  { "title": "", "src": "assets/photos/photo-29.jpg" },
-  { "title": "", "src": "assets/photos/photo-30.jpg" },
-  { "title": "", "src": "assets/photos/photo-31.jpg" },
-  { "title": "", "src": "assets/photos/photo-32.jpg" },
-  { "title": "", "src": "assets/photos/photo-33.jpg" },
-  { "title": "", "src": "assets/photos/photo-34.jpg" },
-  { "title": "", "src": "assets/photos/photo-35.jpg" },
-  { "title": "", "src": "assets/photos/photo-36.jpg" },
-  { "title": "", "src": "assets/photos/photo-37.jpg" },
-  { "title": "", "src": "assets/photos/photo-38.jpg" },
-  { "title": "", "src": "assets/photos/photo-39.jpg" },
-  { "title": "", "src": "assets/photos/photo-40.jpg" },
-  { "title": "", "src": "assets/photos/photo-41.jpg" },
-  { "title": "", "src": "assets/photos/photo-42.jpg" },
-  { "title": "", "src": "assets/photos/photo-43.jpg" },
-  { "title": "", "src": "assets/photos/photo-44.jpg" },
-  { "title": "", "src": "assets/photos/photo-45.jpg" },
-  { "title": "", "src": "assets/photos/photo-46.jpg" },
-  { "title": "", "src": "assets/photos/photo-47.jpg" },
-  { "title": "", "src": "assets/photos/photo-48.jpg" },
-  { "title": "", "src": "assets/photos/photo-49.jpg" },
-  { "title": "", "src": "assets/photos/photo-50.jpg" },
-  { "title": "", "src": "assets/photos/photo-51.jpg" },
-  { "title": "", "src": "assets/photos/photo-52.jpg" },
-  { "title": "", "src": "assets/photos/photo-53.jpg" },
-  { "title": "", "src": "assets/photos/photo-54.jpg" },
-  { "title": "", "src": "assets/photos/photo-55.jpg" },
-  { "title": "", "src": "assets/photos/photo-56.jpg" },
-  { "title": "", "src": "assets/photos/photo-57.jpg" },
-  { "title": "", "src": "assets/photos/photo-58.jpg" },
-  { "title": "", "src": "assets/photos/photo-59.jpg" },
-  { "title": "", "src": "assets/photos/photo-60.jpg" },
-  { "title": "", "src": "assets/photos/photo-61.jpg" },
-  { "title": "", "src": "assets/photos/photo-62.jpg" },
-  { "title": "", "src": "assets/photos/photo-63.jpg" },
-  { "title": "", "src": "assets/photos/photo-64.jpg" },
-  { "title": "", "src": "assets/photos/photo-65.jpg" },
-  { "title": "", "src": "assets/photos/photo-66.jpg" },
-  { "title": "", "src": "assets/photos/photo-67.jpg" },
-  { "title": "", "src": "assets/photos/photo-68.jpg" },
-  { "title": "", "src": "assets/photos/photo-69.jpg" },
-  { "title": "", "src": "assets/photos/photo-70.jpg" },
-  { "title": "", "src": "assets/photos/photo-71.jpg" },
-  { "title": "", "src": "assets/photos/photo-72.jpg" },
-  { "title": "", "src": "assets/photos/photo-73.jpg" },
-  { "title": "", "src": "assets/photos/photo-74.jpg" },
-  { "title": "", "src": "assets/photos/photo-75.jpg" },
-  { "title": "", "src": "assets/photos/photo-76.jpg" },
-  { "title": "", "src": "assets/photos/photo-77.jpg" },
-  { "title": "", "src": "assets/photos/photo-78.jpg" },
-  { "title": "", "src": "assets/photos/photo-79.jpg" },
-  { "title": "", "src": "assets/photos/photo-80.jpg" },
-  { "title": "", "src": "assets/photos/photo-81.jpg" },
-  { "title": "", "src": "assets/photos/photo-82.jpg" },
-  { "title": "", "src": "assets/photos/photo-83.jpg" },
-  { "title": "", "src": "assets/photos/photo-84.jpg" },
-  { "title": "", "src": "assets/photos/photo-85.jpg" },
-  { "title": "", "src": "assets/photos/photo-86.jpg" },
-  { "title": "", "src": "assets/photos/photo-87.jpg" }
+  {
+    "src": "assets/photos/photo-87.jpg",
+    "title": "",
+    "width": 1359,
+    "height": 1019
+  },
+  {
+    "src": "assets/photos/photo-4.jpg",
+    "title": "amigos do barulho",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-5.jpg",
+    "title": "skateboard pra sempre",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-6.jpg",
+    "title": "aula com flávio gomes",
+    "width": 1280,
+    "height": 833
+  },
+  {
+    "src": "assets/photos/photo-7.jpg",
+    "title": "formamo jão",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-8.jpg",
+    "title": "obrigado os ensinamentos Luiz e Arthur",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-9.jpg",
+    "title": "turma da gumga",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-10.jpg",
+    "title": "gumga io",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-11.jpg",
+    "title": "acho que 2º meetup (DevParaná)",
+    "width": 1440,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-12.jpg",
+    "title": "Brendan Eich sobre WebAssembly",
+    "width": 1440,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-13.jpg",
+    "title": "Laurie Voss, co-founder do npm",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-14.jpg",
+    "title": "última apresentação da facool",
+    "width": 1440,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-15.jpg",
+    "title": "partiu BrazilJS samuca",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-16.jpg",
+    "title": "Brendan² sobre a legada generator function",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-17.jpg",
+    "title": "nosso 1º meetup DevParaná, falei sobre AngularJS",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-18.jpg",
+    "title": "Jaydson, fim de BrazilJS (com 840L de choop)",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-19.jpg",
+    "title": "Criador do meu ganha pão",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-20.jpg",
+    "title": "respeitadíssimo Douglas Crockford",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-23.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-21.jpg",
+    "title": "Fer, Rafa, Chris Lilley (SVG creator / tech director w3c)",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-22.jpg",
+    "title": "falei sobre Web Components com AngularJS - UFPR",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-24.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-25.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-30.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-26.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-28.jpg",
+    "title": "",
+    "width": 720,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-27.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-37.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-36.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-38.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-29.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-31.jpg",
+    "title": "",
+    "width": 1296,
+    "height": 864
+  },
+  {
+    "src": "assets/photos/photo-32.jpg",
+    "title": "",
+    "width": 1296,
+    "height": 864
+  },
+  {
+    "src": "assets/photos/photo-33.jpg",
+    "title": "",
+    "width": 1179,
+    "height": 804
+  },
+  {
+    "src": "assets/photos/photo-35.jpg",
+    "title": "",
+    "width": 810,
+    "height": 1440
+  },
+  {
+    "src": "assets/photos/photo-39.jpg",
+    "title": "",
+    "width": 810,
+    "height": 1440
+  },
+  {
+    "src": "assets/photos/photo-41.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-40.jpg",
+    "title": "",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "src": "assets/photos/photo-42.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-43.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-44.jpg",
+    "title": "",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "src": "assets/photos/photo-45.jpg",
+    "title": "",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-53.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-48.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-47.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-52.jpg",
+    "title": "",
+    "width": 720,
+    "height": 405
+  },
+  {
+    "src": "assets/photos/photo-51.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-34.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "src": "assets/photos/photo-54.jpg",
+    "title": "",
+    "width": 655,
+    "height": 1164
+  },
+  {
+    "src": "assets/photos/photo-49.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-50.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-55.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-56.jpg",
+    "title": "",
+    "width": 655,
+    "height": 1164
+  },
+  {
+    "src": "assets/photos/photo-57.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-58.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-61.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-59.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-60.jpg",
+    "title": "",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-62.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-64.jpg",
+    "title": "",
+    "width": 1164,
+    "height": 655
+  },
+  {
+    "src": "assets/photos/photo-63.jpg",
+    "title": "",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-65.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-46.jpg",
+    "title": "",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "src": "assets/photos/photo-67.jpg",
+    "title": "",
+    "width": 396,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-66.jpg",
+    "title": "",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "src": "assets/photos/photo-68.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-70.jpg",
+    "title": "",
+    "width": 960,
+    "height": 539
+  },
+  {
+    "src": "assets/photos/photo-71.jpg",
+    "title": "",
+    "width": 1632,
+    "height": 1224
+  },
+  {
+    "src": "assets/photos/photo-75.jpg",
+    "title": "",
+    "width": 528,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-73.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-72.jpg",
+    "title": "",
+    "width": 1632,
+    "height": 1224
+  },
+  {
+    "src": "assets/photos/photo-74.jpg",
+    "title": "",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "src": "assets/photos/photo-69.jpg",
+    "title": "",
+    "width": 2048,
+    "height": 1536
+  },
+  {
+    "src": "assets/photos/photo-77.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-78.jpg",
+    "title": "",
+    "width": 719,
+    "height": 1280
+  },
+  {
+    "src": "assets/photos/photo-76.jpg",
+    "title": "",
+    "width": 960,
+    "height": 528
+  },
+  {
+    "src": "assets/photos/photo-79.jpg",
+    "title": "",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "src": "assets/photos/photo-81.jpg",
+    "title": "",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "src": "assets/photos/photo-82.jpg",
+    "title": "",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "src": "assets/photos/photo-80.jpg",
+    "title": "",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "src": "assets/photos/photo-83.jpg",
+    "title": "",
+    "width": 960,
+    "height": 539
+  },
+  {
+    "src": "assets/photos/photo-84.jpg",
+    "title": "",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "src": "assets/photos/photo-85.jpg",
+    "title": "",
+    "width": 960,
+    "height": 539
+  },
+  {
+    "src": "assets/photos/photo-86.jpg",
+    "title": "",
+    "width": 960,
+    "height": 539
+  },
+  {
+    "src": "assets/photos/photo-1.jpg",
+    "title": "galera da facool",
+    "width": 960,
+    "height": 539
+  },
+  {
+    "src": "assets/photos/photo-2.jpg",
+    "title": "majô :)",
+    "width": 1000,
+    "height": 668
+  },
+  {
+    "src": "assets/photos/photo-3.jpg",
+    "title": "minetto uns 10 anos atrás",
+    "width": 2048,
+    "height": 1365
+  }
 ]

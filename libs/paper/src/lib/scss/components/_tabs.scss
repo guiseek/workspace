@@ -6,7 +6,7 @@
   }
 
   label {
-    input[type="radio"] {
+    input[type='radio'] {
       display: none;
     }
     @include color('color', primary-light);
@@ -29,7 +29,8 @@
     }
 
     @for $num from 0 through 10 {
-      &[for$='paper-tab#{$num}'].active ~ section[id$='paper-tab-content#{$num}'] {
+      &[for$='paper-tab#{$num}'].active
+        ~ section[id$='paper-tab-content#{$num}'] {
         display: block;
       }
     }

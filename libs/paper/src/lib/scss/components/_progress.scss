@@ -28,7 +28,7 @@
     @each $colorName, $color, $color-light in $colors {
       &.#{$colorName} {
         @include color('background-color', #{$colorName}-light);
-  
+
         &.striped {
           @include striped-background($color-light);
         }
@@ -40,7 +40,7 @@
         width: $i * 1%;
       }
     }
-  
+
     &.w-0,
     &.w-100 {
       border-right: 0;

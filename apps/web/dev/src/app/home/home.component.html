@@ -3,9 +3,7 @@
 
   <ol uxPhotoGallery rowSize="300px" columnSize="320px" gapSize="4rem 2rem">
     <li *ngFor="let image of images$ | async">
-      <figure>
-        <img [src]="image.src" [alt]="image.title" />
-      </figure>
+      <guiseek-figure [img]="image"></guiseek-figure>
     </li>
   </ol>
 </section>

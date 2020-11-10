@@ -4,7 +4,10 @@
 
   ol {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--ux-grid-template-columns), 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--ux-grid-template-columns), 1fr)
+    );
     grid-template-rows: repeat(6, var(--ux-grid-template-rows));
     grid-gap: 1rem;
     grid-auto-flow: dense;

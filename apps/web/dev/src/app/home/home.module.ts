@@ -10,10 +10,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeRoutingModule } from './home-routing.module';
+import { ImageComponent } from './image.component';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, ImageComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

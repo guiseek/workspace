@@ -1,7 +1,12 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "ux", ["kebab-case", "camelCase"]],
+    "directive-selector": [
+      true,
+      "attribute",
+      "ux",
+      ["kebab-case", "camelCase"]
+    ],
     "component-selector": [true, "element", "ux", ["kebab-case", "camelCase"]]
   },
   "linterOptions": {

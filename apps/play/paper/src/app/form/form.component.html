@@ -2,16 +2,23 @@
   form works!
 </p>
 
-<ux-enter-password [length]="6" (valueChange)="onChange($event)" [formControl]="password"></ux-enter-password>
+<ux-enter-password
+  [length]="6"
+  (valueChange)="onChange($event)"
+  [formControl]="password"
+></ux-enter-password>
 
 <pre>{{ password.value | json }}</pre>
 <form [formGroup]="form">
   <fieldset ux-checkbox-group>
     <legend ux-legend>Checkboxes</legend>
-    <label ux-checkbox label="Checkbox 1" [formControl]="form.get('check1')"></label>
+    <label
+      ux-checkbox
+      label="Checkbox 1"
+      [formControl]="form.get('check1')"
+    ></label>
     <label ux-checkbox label="Checkbox 2" formControlName="check2"></label>
   </fieldset>
-
 
   <fieldset ux-checkbox-group uxValueAccessor formControlName="checks">
     <legend ux-legend>Checkboxes</legend>

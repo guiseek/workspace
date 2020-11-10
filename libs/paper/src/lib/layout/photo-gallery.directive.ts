@@ -13,7 +13,7 @@ export class PhotoGalleryDirective {
       ${this.varRowSize};
       ${this.varGapSize};
       ${this.varColumnSize};
-    `
+    `;
   }
 
   private _gapSize = '300px';

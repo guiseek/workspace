@@ -28,7 +28,7 @@
       @include color('color', 'primary');
     }
 
-    &[id^='collapsible']:checked~div.collapsible-body {
+    &[id^='collapsible']:checked ~ div.collapsible-body {
       margin: 0;
       max-height: 960px;
       opacity: 1;

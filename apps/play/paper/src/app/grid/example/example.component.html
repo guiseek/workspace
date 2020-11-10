@@ -3,7 +3,7 @@
 <ol uxPhotoGallery rowSize="300px" columnSize="320px">
   <li *ngFor="let image of images$ | async">
     <figure>
-      <img [src]="image.src" [alt]="image.title">
+      <img [src]="image.src" [alt]="image.title" />
     </figure>
   </li>
 </ol>

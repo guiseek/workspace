@@ -3,10 +3,12 @@
   --ux-grid-template-rows: 300px;
   --ux-grid-template-columns: 320px;
 
-
   ol.ux-photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--ux-grid-template-columns), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--ux-grid-template-columns), 1fr)
+    );
     grid-template-rows: repeat(6, var(--ux-grid-template-rows));
     grid-gap: var(--ux-grid-gap);
     grid-auto-flow: dense;

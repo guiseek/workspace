@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  //
+
+  h1 {
+    width: fit-content;
+  }
+
+  .no-post {
+    display: none;
+  }
+}

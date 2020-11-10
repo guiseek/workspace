@@ -11,7 +11,7 @@ export class MenuElement extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render(this.isNormalMode)
+    this.render(this.isNormalMode);
   }
 
   render(isNormalMode) {
@@ -687,7 +687,6 @@ export class MenuElement extends HTMLElement {
     </nav>`;
 
     console.log('opa');
-
   }
 }
 customElements.define('guiseek-menu', MenuElement);

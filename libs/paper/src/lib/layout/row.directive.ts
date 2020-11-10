@@ -26,9 +26,7 @@ export class RowDirective {
 
   @HostBinding('class')
   get rowClass() {
-    const rowSize = this.uxRow
-      ? ` flex-${this.uxRow}`
-      : '';
+    const rowSize = this.uxRow ? ` flex-${this.uxRow}` : '';
     return `row${rowSize}`;
   }
 }

@@ -7,9 +7,7 @@ import { GridComponent } from './grid.component';
 import { ExampleComponent } from './example/example.component';
 import { PaperLayoutModule } from '@nx-ux/paper';
 
-const routes: Routes = [
-  { path: '', component: GridComponent }
-];
+const routes: Routes = [{ path: '', component: GridComponent }];
 
 @NgModule({
   declarations: [GridComponent, ExampleComponent],
@@ -17,7 +15,7 @@ const routes: Routes = [
     CommonModule,
     PaperLayoutModule,
     GridRoutingModule,
-    RouterModule.forChild(routes)
-  ]
+    RouterModule.forChild(routes),
+  ],
 })
-export class GridModule { }
+export class GridModule {}
