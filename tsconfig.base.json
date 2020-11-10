@@ -21,7 +21,8 @@
       "@nx-feat/chat-client": ["libs/chat/client/src/index.ts"],
       "@nx-feat/chat-server": ["libs/chat/server/src/index.ts"],
       "@nx-feat/chat-data": ["libs/chat/data/src/index.ts"],
-      "@hacktoberfest/br": ["libs/hacktoberfest/br/src/index.ts"]
+      "@hacktoberfest/br": ["libs/hacktoberfest/br/src/index.ts"],
+      "@nx-feat/autodocs": ["libs/autodocs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

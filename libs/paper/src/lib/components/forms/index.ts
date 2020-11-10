@@ -1,4 +1,5 @@
 export * from './checkbox';
+export * from './enter-password';
 export * from './form-group';
 export * from './input';
 export * from './label.directive';

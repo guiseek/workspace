@@ -1,0 +1,7 @@
+<p>home works!</p>
+
+<nav>
+  <a *ngFor="let doc of docs$" [routerLink]="doc.name">{{
+    doc.name
+  }}</a>
+</nav>

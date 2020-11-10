@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  padding: var(--doc-source-code-padding);
+  color: var(--doc-source-code-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--doc-source-code-border);
+  background-color: var(--doc-source-code-background);
+}

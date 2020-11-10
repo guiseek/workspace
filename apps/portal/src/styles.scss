@@ -1,0 +1,17 @@
+@import '~@angular/cdk/overlay-prebuilt.css';
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism.css';
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+:root {
+  --doc-source-code-padding: 10px;
+  --doc-source-code-color: #111;
+  --doc-source-code-border-color: #333;
+  --doc-source-code-background: rgb(245, 245, 245);
+}

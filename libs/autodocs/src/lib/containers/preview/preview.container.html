@@ -1,0 +1,21 @@
+<div class="preview-container">
+  <!-- <header>{{ data.name }}</header> -->
+  <section>configurações</section>
+  <main>
+    <ng-container *ngIf="form">
+      <div
+        [ngComponentOutlet]="component"
+        [ngComponentOutletNdcDynamicInputs]="form?.value"
+      ></div>
+    </ng-container>
+  </main>
+  <aside>
+    <autodocs-dynamic-form
+      [controls]="controls"
+      [form]="form"
+    ></autodocs-dynamic-form>
+  </aside>
+  <footer>
+    <pre autodocsSource [code]="data?.sourceCode"></pre>
+  </footer>
+</div>

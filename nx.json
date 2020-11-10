@@ -18,7 +18,7 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e", "compodoc"]
       }
     }
   },
@@ -67,6 +67,16 @@
     },
     "web-dev": {
       "tags": ["type:app", "side:client"]
+    },
+    "autodocs": {
+      "tags": []
+    },
+    "portal": {
+      "tags": []
+    },
+    "portal-e2e": {
+      "tags": [],
+      "implicitDependencies": ["portal"]
     }
   }
 }

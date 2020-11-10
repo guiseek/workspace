@@ -1,0 +1,7 @@
+<a [routerLink]="[prefix, nav.section]">{{ nav.section }}</a>
+
+<ul>
+  <li *ngFor="let item of nav.items">
+    <a [routerLink]="[prefix, nav.section, item.id]">{{ item.name }}</a>
+  </li>
+</ul>

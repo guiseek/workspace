@@ -1,0 +1,11 @@
+<aside>
+  <ng-container *ngIf="project$ | async as project">
+    <autodocs-sidenav
+      [prefix]="'/' + project.name"
+      [documentation]="compodoc$ | async"
+    ></autodocs-sidenav>
+  </ng-container>
+</aside>
+<main>
+  <router-outlet></router-outlet>
+</main>

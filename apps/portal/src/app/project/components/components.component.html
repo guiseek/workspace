@@ -1,0 +1,11 @@
+<p>components works!</p>
+
+<ul>
+  <li *ngFor="let cmp of components$ | async">
+    <button type="button" (click)="select(cmp)" >{{ cmp.name }}</button>
+  </li>
+</ul>
+
+<section>
+
+</section>

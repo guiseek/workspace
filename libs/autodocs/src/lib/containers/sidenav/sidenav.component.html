@@ -1,0 +1,7 @@
+<nav role="navigation">
+  <ul *ngIf="navigation">
+    <li *ngFor="let section of navigation">
+      <autodocs-sidenav-section [prefix]="prefix" [nav]="section"></autodocs-sidenav-section>
+    </li>
+  </ul>
+</nav>

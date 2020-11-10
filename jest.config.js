@@ -13,5 +13,7 @@ module.exports = {
     '<rootDir>/apps/web/dev',
     '<rootDir>/libs/eleventy',
     '<rootDir>/apps/eleventy-e2e',
+    '<rootDir>/libs/autodocs',
+    '<rootDir>/apps/portal',
   ],
 };
