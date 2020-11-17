@@ -102,6 +102,7 @@
     "@nrwl/nest": "^10.3.1",
     "@nrwl/node": "10.3.1",
     "@nrwl/nx-plugin": "^10.3.2",
+    "@nrwl/storybook": "^10.3.3",
     "@nrwl/web": "10.3.1",
     "@nrwl/workspace": "10.3.1",
     "@semantic-release/changelog": "^5.0.1",

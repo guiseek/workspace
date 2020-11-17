@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 declare var ng: any;
 
 @Component({
-  selector: 'guiseek-blog',
+  selector: 'seek-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss'],
   preserveWhitespaces: true,

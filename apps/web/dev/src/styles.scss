@@ -1,6 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'libs/paper/src/lib/scss/styles.scss';
+// @import 'libs/paper/src/lib/scss/styles.scss';
+// @import 'app/theming/scss/theming.scss';
+// $my-theme: (
+//   interactive-primary: green,
+
+//   link-color: interactive-primary,
+
+//   heading-01-font-size: 58px,
+//   heading-01-line-height: 64px,
+//   heading-01-font-weight: 500,
+//   heading-01-letter-spacing: 0.2px
+// );
+
+// $nx-themes: nx-register-theme($my-theme, guiseek);
+
+// header {
+//   @include type-style(heading-01);
+//   background: nx-theme(interactive-primary);
+// }
+
+// @import 'app/theming/scss/themes/aposin.scss';
+// $nx-themes: nx-register-theme($my-theme, themeName, baseThemeName);
+
+
+@import 'app/theme.scss';
 @import 'assets/styles/reset.scss';
 
 html,

@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "guiseek",
+      ["guiseek", "seek"],
       ["kebab-case", "camelCase"]
     ],
     "component-selector": [
       true,
       "element",
-      "guiseek",
+      ["guiseek", "seek"],
       ["kebab-case", "camelCase"]
     ]
   },

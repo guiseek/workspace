@@ -1,4 +1,3 @@
-import { AssetImage } from './../shared/types/shared-types';
 import {
   Output,
   Input,
@@ -8,9 +7,11 @@ import {
   EventEmitter,
   AfterViewInit,
   ChangeDetectionStrategy,
+  ViewEncapsulation,
 } from '@angular/core';
 import { debounceTime, takeUntil } from 'rxjs/operators';
 import { BehaviorSubject, fromEvent, Subject } from 'rxjs';
+import { AssetImage } from './../../shared/types/shared-types';
 
 export interface FigureState {
   visible: boolean;
@@ -22,7 +23,7 @@ const initial: FigureState = {
 };
 
 @Component({
-  selector: 'guiseek-figure',
+  selector: 'seek-figure',
   template: `
     <ng-container *ngIf="state$ | async as s">
       <figure *ngIf="s.visible">
@@ -39,20 +40,20 @@ const initial: FigureState = {
   `,
   styles: [
     `
-      :host figure,
-      :host figure > img {
+      seek-figure figure,
+      seek-figure figure > img {
         height: 100%;
       }
-      :host figure > img {
+      seek-figure figure > img {
         width: 100%;
         object-fit: cover;
       }
     `,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
 })
-export class ImageComponent implements OnInit, AfterViewInit {
+export class FigureComponent implements OnInit, AfterViewInit {
   destroy$ = new Subject<void>();
 
   @Input() img: AssetImage;

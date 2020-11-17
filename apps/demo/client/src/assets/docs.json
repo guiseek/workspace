@@ -1,0 +1,372 @@
+{
+  "pipes": [],
+  "interfaces": [],
+  "injectables": [],
+  "classes": [],
+  "directives": [
+    {
+      "name": "PasteDirective",
+      "id": "directive-PasteDirective-d93ba35cc45f509e54bd0e5e67b60639",
+      "file": "src/lib/paste/paste.directive.ts",
+      "type": "directive",
+      "description": "",
+      "sourceCode": "import { Directive, EventEmitter, HostListener, Output } from '@angular/core';\n\nexport type EventWithCode = Event & { code: string }\n\n@Directive({\n  selector: '[customdocPaste],[keydown.paste]',\n})\nexport class PasteDirective {\n  @Output('keydown.paste')\n  pasteEvent = new EventEmitter<string>();\n\n  @HostListener('keydown', ['$event'])\n  async detectPaste(event: KeyboardEvent) {\n    console.log(event.code);\n\n    if (\n      event.code === 'KeyP'\n      // && event.code === 'Meta'\n    ) {\n      const content = await navigator.clipboard.readText();\n      this.pasteEvent.emit(content);\n    }\n  }\n}\n",
+      "selector": "[customdocPaste],[keydown.paste]",
+      "providers": [],
+      "inputsClass": [],
+      "outputsClass": [
+        {
+          "name": "keydown.paste",
+          "defaultValue": "new EventEmitter<string>()",
+          "line": 10,
+          "type": "EventEmitter"
+        }
+      ],
+      "hostBindings": [],
+      "hostListeners": [
+        {
+          "name": "keydown",
+          "args": [
+            {
+              "name": "event",
+              "type": "KeyboardEvent"
+            }
+          ],
+          "argsDecorator": ["$event"],
+          "line": 13
+        }
+      ],
+      "propertiesClass": [],
+      "methodsClass": []
+    }
+  ],
+  "components": [
+    {
+      "name": "ButtonComponent",
+      "id": "component-ButtonComponent-7a9c5edd7f8bfb40efed9b374266f11f",
+      "file": "src/lib/button/button.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "customdoc-button",
+      "styleUrls": ["./button.component.scss"],
+      "styles": [],
+      "templateUrl": ["./button.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "disabled",
+          "line": 32,
+          "type": "boolean"
+        },
+        {
+          "name": "style",
+          "line": 24,
+          "type": ""
+        },
+        {
+          "name": "type",
+          "line": 16,
+          "type": ""
+        }
+      ],
+      "outputsClass": [
+        {
+          "name": "clicked",
+          "defaultValue": "new EventEmitter()",
+          "line": 36,
+          "type": "EventEmitter"
+        }
+      ],
+      "propertiesClass": [
+        {
+          "name": "_disabled",
+          "defaultValue": "false",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 28
+        },
+        {
+          "name": "_style",
+          "defaultValue": "'accent'",
+          "type": "ButtonStyle",
+          "optional": false,
+          "description": "",
+          "line": 20
+        },
+        {
+          "name": "_type",
+          "defaultValue": "'button'",
+          "type": "ButtonType",
+          "optional": false,
+          "description": "",
+          "line": 12
+        }
+      ],
+      "methodsClass": [],
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "",
+      "type": "component",
+      "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\nexport type ButtonType = 'button' | 'submit';\nexport type ButtonStyle = 'accent' | 'ghost';\n\n@Component({\n  selector: 'customdoc-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  _type: ButtonType = 'button';\n  get type(): ButtonType {\n    return this._type;\n  }\n  @Input() set type(value: ButtonType) {\n    this._type = value;\n  }\n\n  _style: ButtonStyle = 'accent';\n  get style(): ButtonStyle {\n    return this._style;\n  }\n  @Input() set style(value: ButtonStyle) {\n    this._style = value;\n  }\n\n  _disabled = false;\n  get disabled(): boolean {\n    return this._disabled;\n  }\n  @Input() set disabled(value: boolean) {\n    this._disabled = value;\n  }\n\n  @Output() clicked = new EventEmitter();\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./button.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "args": [],
+        "line": 36
+      },
+      "implements": ["OnInit"],
+      "accessors": {
+        "type": {
+          "name": "type",
+          "setSignature": {
+            "name": "type",
+            "type": "void",
+            "args": [
+              {
+                "name": "value",
+                "type": ""
+              }
+            ],
+            "returnType": "void",
+            "line": 16,
+            "jsdoctags": [
+              {
+                "name": "value",
+                "type": "",
+                "tagName": {
+                  "text": "param"
+                }
+              }
+            ]
+          },
+          "getSignature": {
+            "name": "type",
+            "type": "",
+            "returnType": "ButtonType",
+            "line": 13
+          }
+        },
+        "style": {
+          "name": "style",
+          "setSignature": {
+            "name": "style",
+            "type": "void",
+            "args": [
+              {
+                "name": "value",
+                "type": ""
+              }
+            ],
+            "returnType": "void",
+            "line": 24,
+            "jsdoctags": [
+              {
+                "name": "value",
+                "type": "",
+                "tagName": {
+                  "text": "param"
+                }
+              }
+            ]
+          },
+          "getSignature": {
+            "name": "style",
+            "type": "",
+            "returnType": "ButtonStyle",
+            "line": 21
+          }
+        },
+        "disabled": {
+          "name": "disabled",
+          "setSignature": {
+            "name": "disabled",
+            "type": "void",
+            "args": [
+              {
+                "name": "value",
+                "type": "boolean"
+              }
+            ],
+            "returnType": "void",
+            "line": 32,
+            "jsdoctags": [
+              {
+                "name": "value",
+                "type": "boolean",
+                "tagName": {
+                  "text": "param"
+                }
+              }
+            ]
+          },
+          "getSignature": {
+            "name": "disabled",
+            "type": "boolean",
+            "returnType": "boolean",
+            "line": 29
+          }
+        }
+      },
+      "templateData": "<button\n  [type]=\"type\"\n  [class]=\"style\"\n  [disabled]=\"disabled\"\n  (click)=\"clicked.emit($event)\"\n>\n  <ng-content></ng-content>\n</button>\n"
+    }
+  ],
+  "modules": [
+    {
+      "name": "ButtonModule",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "ButtonComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "ButtonComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "PasteModule",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "PasteDirective"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "PasteDirective"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "miscellaneous": {
+    "variables": [],
+    "functions": [],
+    "typealiases": [
+      {
+        "name": "ButtonStyle",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "\"accent\" | \"ghost\"",
+        "file": "src/lib/button/button.component.ts",
+        "description": "",
+        "kind": 168
+      },
+      {
+        "name": "ButtonType",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "\"button\" | \"submit\"",
+        "file": "src/lib/button/button.component.ts",
+        "description": "",
+        "kind": 168
+      },
+      {
+        "name": "EventWithCode",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "",
+        "file": "src/lib/paste/paste.directive.ts",
+        "description": "",
+        "kind": 169
+      }
+    ],
+    "enumerations": [],
+    "groupedVariables": {},
+    "groupedFunctions": {},
+    "groupedEnumerations": {},
+    "groupedTypeAliases": {
+      "src/lib/button/button.component.ts": [
+        {
+          "name": "ButtonStyle",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "\"accent\" | \"ghost\"",
+          "file": "src/lib/button/button.component.ts",
+          "description": "",
+          "kind": 168
+        },
+        {
+          "name": "ButtonType",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "\"button\" | \"submit\"",
+          "file": "src/lib/button/button.component.ts",
+          "description": "",
+          "kind": 168
+        }
+      ],
+      "src/lib/paste/paste.directive.ts": [
+        {
+          "name": "EventWithCode",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "",
+          "file": "src/lib/paste/paste.directive.ts",
+          "description": "",
+          "kind": 169
+        }
+      ]
+    }
+  }
+}

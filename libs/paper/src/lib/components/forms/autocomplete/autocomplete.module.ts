@@ -9,4 +9,4 @@ import { AutocompleteComponent } from './autocomplete.component';
   declarations: [AutocompleteComponent, HighlightPipe],
   exports: [AutocompleteComponent, HighlightPipe],
 })
-export class AutocompleteModule {}
+export class PaperAutocompleteModule {}

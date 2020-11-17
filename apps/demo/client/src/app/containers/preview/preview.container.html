@@ -1,0 +1,19 @@
+<div cdkDropListGroup>
+  <nav>
+    <ul cdkDropList [cdkDropListData]="components" (cdkDropListDropped)="drop($event)">
+      <li *ngFor="let c of components" cdkDrag>
+        {{ c.label }}
+      </li>
+    </ul>
+  </nav>
+  <section cdkDropList [cdkDropListData]="currents" (cdkDropListDropped)="dropped($event)">
+    <header class="theme-control"></header>
+    <div class="playground">
+      <h3>Arraste um componente</h3>
+    </div>
+    <footer class="log-messages"></footer>
+  </section>
+  <aside>
+    <form action=""></form>
+  </aside>
+</div>

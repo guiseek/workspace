@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'guiseek-header',
+  selector: 'seek-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  @Input() location: Location = location;
+
+  constructor() {
+    console.log(this.location.pathname);
+  }
 
   ngOnInit(): void {}
 }

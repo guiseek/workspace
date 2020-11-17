@@ -6,3 +6,9 @@ export interface AssetImage {
   width?: number;
   height?: number;
 }
+
+export interface NavItem {
+  title: string;
+  url: string;
+  color: string;
+}

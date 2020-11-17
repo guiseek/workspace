@@ -1,0 +1,18 @@
+<p>login works!</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <legend>Email</legend>
+    <input type="email" autocomplete="username" formControlName="email" />
+  </fieldset>
+  <fieldset>
+    <legend>Senha</legend>
+    <input type="password" autocomplete="current-password" formControlName="password" />
+  </fieldset>
+
+  <div>
+    <button type="submit" [disabled]="!form.valid">
+      Login
+    </button>
+  </div>
+</form>

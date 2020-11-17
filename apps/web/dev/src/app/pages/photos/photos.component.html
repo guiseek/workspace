@@ -1,0 +1,7 @@
+<section uxContainer="lg">
+  <ol uxPhotoGallery rowSize="300px" columnSize="320px" gapSize="4rem 2rem">
+    <li *ngFor="let image of images$ | async">
+      <seek-figure [img]="image"></seek-figure>
+    </li>
+  </ol>
+</section>

@@ -1,0 +1,5 @@
+<div *ngFor="let item of nav" class="nav-item">
+  <a [routerLink]="item.url" [ngClass]="item.color" class="nav-link">
+    {{ item.title }}
+  </a>
+</div>

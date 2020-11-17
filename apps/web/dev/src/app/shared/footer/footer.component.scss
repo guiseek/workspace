@@ -1,0 +1,110 @@
+@import '../../theming/scss/mixins.scss';
+:host {
+  display: flex;
+  width: 100%;
+  background-color: var(--blue00);
+  display: flex;
+  justify-content: center;
+
+  .width {
+    @include width();
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: var(--mobile)) {
+    padding: 30px 0;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+  }
+  .work-mark {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px;
+    margin-left: -12px;
+  }
+  svg {
+    width: 32px;
+
+    @media (min-width: var(--mobile0)) {
+      width: 40px;
+    }
+  }
+}
+
+// @import '../../theming/scss/mixins.scss';
+// :host {
+//   display: flex;
+//   width: 100%;
+//   background-color: var(--blue00);
+//   display: flex;
+//   justify-content: center;
+//   margin-top: auto;
+
+//   .width {
+//     @include width();
+//   }
+
+//   > div {
+//     width: 100%;
+//     max-width: 1280px;
+//     padding: 0px 80px;
+//     box-sizing: border-box;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     @media (max-width: var(--mobile)) {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding-top: 0;
+//       padding-bottom: 0;
+//     }
+
+//     @media (max-width: var(--mobile)) {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 55px 0;
+//     }
+//   }
+//   div.credits {
+//     @media (max-width: var(--mobile)) {
+//       margin-bottom: 40px;
+//     }
+
+//     p {
+//       font-size: 16px;
+//       color: var(--text20);
+//       line-height: 180%;
+//     }
+
+//     a {
+//       text-decoration: none;
+//     }
+//   }
+// }
