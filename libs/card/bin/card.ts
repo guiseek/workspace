@@ -17,6 +17,7 @@ const data = {
   community: [
     chalk.green('DevParaná'),
     chalk.magenta(`${spc(11)}Hacktoberfest Brasil`),
+    chalk.cyan(`${spc(11)}WebRTC Community`),
   ],
   github: chalk.blue('https://github.com/guiseek'),
   twitter: chalk.blue('https://twitter.com/guiseek'),
@@ -37,7 +38,7 @@ const data = {
 const newline = '\n';
 const heading = `${data.labelName} ${data.name}`;
 const handling = `${data.labelGoal} ${data.challenge[0]} \n ${data.challenge[1]}`;
-const community = `${data.labelCommunity} ${data.community[0]} \n ${data.community[1]}`;
+const community = `${data.labelCommunity} ${data.community[0]} \n ${data.community[1]} \n ${data.community[2]}`;
 const working = `${data.labelWork} ${data.work}`;
 const pageing = `${data.labelPage} ${data.page}`;
 const githubing = `${data.labelGitHub} ${data.github}`;
