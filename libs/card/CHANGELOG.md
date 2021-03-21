@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/guiseek/workspace/compare/card/v1.2.1...card/v1.3.0) (2021-03-21)
+
+### Features
+
+- **card:** add webrtc community ([cfe5dd3](https://github.com/guiseek/workspace/commit/cfe5dd33641fc8443c17039b303a38b88d0626ed))
+
+### Miscellaneous
+
+- Merge pull request #23 from guiseek/guiseek-dev ([a368ab1](https://github.com/guiseek/workspace/commit/a368ab14b097f19d93cd90b99aef88e3ba55c333)), closes [#23](https://github.com/guiseek/workspace/issues/23)
+- Next (#19) ([3170b7e](https://github.com/guiseek/workspace/commit/3170b7ee60a180837ee39d4dce6e6c471e9e766a)), closes [#19](https://github.com/guiseek/workspace/issues/19)
+
 ## [1.2.1](https://github.com/guiseek/workspace/compare/card/v1.2.0...card/v1.2.1) (2020-11-05)
 
 ### Bug Fixes
